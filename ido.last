@@ -1,0 +1,27 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/arthur/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/arthur/.emacs.d/init/"
+ "/home/arthur/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/arthur/" (22524 61392 984211 32000) ".ssh/" ".tmux.conf" "../" "Development/" ".profile~" "Download/" ".bashrc" ".sudo_as_admin_successful" ".bashrc~" ".emacs" "CIS194/" ".profile" ".bash_history" ".gnupg/" ".bash_logout" ".emacs~" "./" "src/" ".stack/" ".config/" ".cache/" ".emacs.d/" ".ghc/" ".gitconfig")
+
+ ("/home/arthur/.emacs.d/" (22524 58692 748216 849000) "../" "./" "elpa/" "auto-save-list/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
