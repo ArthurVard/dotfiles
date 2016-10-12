@@ -18,7 +18,7 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/arthur/" (22524 61392 984211 32000) ".ssh/" ".tmux.conf" "../" "Development/" ".profile~" "Download/" ".bashrc" ".sudo_as_admin_successful" ".bashrc~" ".emacs" "CIS194/" ".profile" ".bash_history" ".gnupg/" ".bash_logout" ".emacs~" "./" "src/" ".stack/" ".config/" ".cache/" ".emacs.d/" ".ghc/" ".gitconfig")
+ ("/home/arthur/" (22524 62646 41619 751000) ".ssh/" ".tmux.conf" "../" "Development/" ".profile~" "Download/" ".bashrc" ".sudo_as_admin_successful" ".bashrc~" ".emacs" "CIS194/" ".profile" ".bash_history" ".gnupg/" ".bash_logout" ".emacs~" "./" "src/" ".stack/" ".config/" ".cache/" ".emacs.d/" ".ghc/" ".gitconfig")
 
  ("/home/arthur/.emacs.d/" (22524 58692 748216 849000) "../" "./" "elpa/" "auto-save-list/")
 )
