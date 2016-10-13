@@ -2,17 +2,19 @@
 ;; ----- smex-history -----
 (
  eval-buffer
- shell
+ haskell-move-nested-right
+ haskell-move-nested-left
+ shrink-window
+ ido-push-dir
  cd
  5x5
- arp
- dbx
- dig
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 3)
- (shell . 1)
- (shell-mode . 2)
+ (eval-buffer . 2)
+ (shrink-window . 8)
+ (ido-push-dir . 1)
+ (haskell-move-nested-left . 1)
+ (haskell-move-nested-right . 1)
 )
