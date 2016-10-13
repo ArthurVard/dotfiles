@@ -4,7 +4,7 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 
-;; === CUSTOM CHECK FUNCTION ===
+;;; === CUSTOM CHECK FUNCTION ===
 (defun ensure-package-installed (&rest packages)
   "Assure every package is installed, ask for installation if it’s not.
    Return a list of installed packages or nil for every skipped package."
@@ -15,7 +15,7 @@
      packages)
 )
 
-;; === List my packages ===
+;;; === List my packages ===
 ;; add package names to the list, on start will install missing pacakges in new machine
 (ensure-package-installed
  'web-mode
@@ -34,7 +34,7 @@
  'magit
  'git-gutter)
 
-;; Unbind Pesky Sleep Button
+;; Unbind Suspend/Pesky Sleep Button
 (global-unset-key [(control z)])
 (global-unset-key [(control x)(control z)])
 ;; Windows Style Undo
@@ -53,7 +53,7 @@
 (load-theme 'tsdh-dark t)
 
 
-;;; Packages to require
+;;; Packages to require listed
 (require 'ruby-mode)
 (require 'web-mode)
 (require 'projectile)
@@ -69,8 +69,10 @@
 (require 'smex)
 (require 'magit)
 (require 'git-gutter)
+(require 'smartparens-ruby)
 
-;; Load init files
+
+;;; Load init files
 (mapcar
  (lambda (f) (load-file f))
  (file-expand-wildcards "~/.emacs.d/init/*.el"))
@@ -79,10 +81,6 @@
 
 (prefer-coding-system 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
-
-
-(add-hook 'haskell-mode-hook #'hindent-mode)
-(add-hook 'haskell-mode-hook 'haskell-indent-mode)
 
 
 (setq ad-redefinition-action 'accept)
@@ -108,34 +106,11 @@
 (add-hook 'ruby-mode-hook 'projectile-rails-on)
 ;(add-hook 'js-mode-hook #'smartparens-mode)
 
-;;; Web-mode
-; с какими файлами ассоциировать web-mode
-(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-
-; настройка отступов
-(setq web-mode-markup-indent-offset 2)
-(setq web-mode-css-indent-offset 2)
-(setq web-mode-code-indent-offset 2)
-
-; сниппеты и автозакрытие парных скобок
-(setq web-mode-extra-snippets '(("erb" . (("name" . ("beg" . "end"))))
-                                ))
-(setq web-mode-extra-auto-pairs '(("erb" . (("open" "close")))
-                                  ))
-
-; подсвечивать текущий элемент
-(setq web-mode-enable-current-element-highlight t)
-
-
 ;;; Smartparens
-(require 'smartparens-ruby)
 (smartparens-global-mode)
 (show-smartparens-global-mode t)
 (sp-with-modes '(rhtml-mode)
-  (sp-local-pair "<" ">")
-  )
+  (sp-local-pair "<" ">"))
 
 ;;; == ido ==
 ;; make buffer switch command auto suggestions, also for find-file command

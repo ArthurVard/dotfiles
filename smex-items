@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ org-mode
+ magit-mode
  eval-buffer
  haskell-move-nested-right
  haskell-move-nested-left
  shrink-window
  ido-push-dir
- cd
- 5x5
 )
 
 ;; ----- smex-data -----
@@ -17,4 +17,6 @@
  (ido-push-dir . 1)
  (haskell-move-nested-left . 1)
  (haskell-move-nested-right . 1)
+ (magit-mode . 1)
+ (org-mode . 1)
 )

@@ -1,3 +1,5 @@
+(add-hook 'haskell-mode-hook #'hindent-mode)
+(add-hook 'haskell-mode-hook 'haskell-indent-mode)
 ;
 (custom-set-variables '(haskell-stylish-on-save t))
 
