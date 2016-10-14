@@ -31,8 +31,11 @@
 ; 'haskell-indentation
  'hindent
  'smex
+ 
  'magit
- 'git-gutter)
+ 'git-gutter
+ 
+ 'racket-mode)
 
 ;; Unbind Suspend/Pesky Sleep Button
 (global-unset-key [(control z)])
@@ -59,18 +62,20 @@
 (require 'projectile)
 (require 'projectile-rails)
 (require 'smartparens-config)
+(require 'smartparens-ruby)
+
 (require 'ido) ; buffer switching ido mode
 (require 'ido-ubiquitous)
 (require 'ido-vertical-mode)
 (require 'ido-yes-or-no)
+
 (require 'haskell-indentation)
 (require 'fill-column-indicator)
 (require 'hindent)
 (require 'smex)
 (require 'magit)
 (require 'git-gutter)
-(require 'smartparens-ruby)
-
+(require 'racket-mode)
 
 ;;; Load init files
 (mapcar
@@ -88,7 +93,6 @@
 (setq-default truncate-lines t)
 
 (setq line-number-mode t)
-(setq column-number-mode t)
 (setq column-number-mode t) ;;Show column numbers
 (kill-buffer "*scratch*") ;; no scratch buffer
 (display-time) ;; show the current time
@@ -105,12 +109,6 @@
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 (add-hook 'ruby-mode-hook 'projectile-rails-on)
 ;(add-hook 'js-mode-hook #'smartparens-mode)
-
-;;; Smartparens
-(smartparens-global-mode)
-(show-smartparens-global-mode t)
-(sp-with-modes '(rhtml-mode)
-  (sp-local-pair "<" ">"))
 
 ;;; == ido ==
 ;; make buffer switch command auto suggestions, also for find-file command
@@ -148,7 +146,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator))))
+    (racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
