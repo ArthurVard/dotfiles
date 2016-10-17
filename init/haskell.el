@@ -1,3 +1,6 @@
+;; https://github.com/chrisdone/emacs-magit-config/blob/master/config/haskell.el
+
+
 (add-hook 'haskell-mode-hook #'hindent-mode)
 (add-hook 'haskell-mode-hook 'haskell-indent-mode)
 ;

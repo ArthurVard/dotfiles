@@ -1,22 +1,30 @@
 
 ;; ----- smex-history -----
 (
- org-mode
- magit-mode
+ magit-status
+ package-install-file
+ load-theme
  eval-buffer
- haskell-move-nested-right
- haskell-move-nested-left
+ magit-push
+ eshell
  shrink-window
- ido-push-dir
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 2)
- (shrink-window . 8)
+ (eval-buffer . 7)
+ (shrink-window . 10)
  (ido-push-dir . 1)
  (haskell-move-nested-left . 1)
  (haskell-move-nested-right . 1)
  (magit-mode . 1)
  (org-mode . 1)
+ (magit-status . 8)
+ (yas-reload-all . 1)
+ (fci-mode . 3)
+ (term . 1)
+ (eshell . 1)
+ (magit-push . 2)
+ (load-theme . 24)
+ (package-install-file . 4)
 )

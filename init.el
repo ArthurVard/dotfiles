@@ -31,17 +31,20 @@
 ; 'haskell-indentation
  'hindent
  'smex
- 
+ 'yasnippet
+
  'magit
  'git-gutter
- 
  'racket-mode)
+
 
 ;; Unbind Suspend/Pesky Sleep Button
 (global-unset-key [(control z)])
 (global-unset-key [(control x)(control z)])
 ;; Windows Style Undo
 ;(global-set-key [(control z)] 'undo)
+
+(add-hook 'text-mode-hook 'yas-minor-mode)
 
 (setq confirm-kill-emacs 'y-or-n-p)
 (fset 'yes-or-no-p 'y-or-n-p)  ;; only type `y` instead of `yes`
@@ -54,9 +57,13 @@
 ;;(custom-enabled-themes (quote (tsdh-dark)))
 ;(load-theme 'solarized-light t)
 (load-theme 'tsdh-dark t)
+;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
+;(load-theme 'solarized t)
 
 
 ;;; Packages to require listed
+(require 'yasnippet)
+(require 'uniquify)
 (require 'ruby-mode)
 (require 'web-mode)
 (require 'projectile)
@@ -82,6 +89,16 @@
  (lambda (f) (load-file f))
  (file-expand-wildcards "~/.emacs.d/init/*.el"))
 
+
+;;; exec shell
+(require 'exec-path-from-shell)
+(exec-path-from-shell-copy-env "SSH_AGENT_PID")
+(exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
+
+
+;;; yasnippet
+(add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
+(yas-global-mode t)
 
 
 (prefer-coding-system 'utf-8)
@@ -131,7 +148,6 @@
 (ido-vertical-mode 1) ; display IDO vertically
 
 
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -143,13 +159,25 @@
  '(comint-move-point-for-output t)
  '(comint-scroll-show-maximum-output t)
  '(comint-scroll-to-bottom-on-input t)
+ '(custom-safe-themes
+   (quote
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator))))
+    (solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
+ '(safe-local-variable-values
+   (quote
+    ((haskell-indent-spaces . 4)
+     (haskell-indent-spaces . 2)
+     (hindent-style . "chris-done")
+     (hindent-style . "gibiansky")
+     (hindent-style . "johan-tibell")
+     (haskell-process-type . cabal-repl)
+     (shm-lambda-indent-style . leftmost-parent)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+)
