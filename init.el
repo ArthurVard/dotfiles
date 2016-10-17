@@ -35,7 +35,8 @@
 
  'magit
  'git-gutter
- 'racket-mode)
+ 'racket-mode
+ 'exec-path-from-shell)
 
 
 ;; Unbind Suspend/Pesky Sleep Button
