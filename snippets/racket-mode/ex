@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: exercise header separator
+# key: ex
+# expand-env: ((yas-indent-line 'fixed))
+# --
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Exercise $0
