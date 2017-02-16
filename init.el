@@ -1,5 +1,5 @@
 ;;;; Created       : ...
-;;;; Last Modified : 2017 Feb 16 (Thu) 08:49:07 AM by Arthur Vardanyan.
+;;;; Last Modified : 2017 Feb 16 (Thu) 09:12:26 AM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (package-initialize)
@@ -93,6 +93,10 @@
 (require 'magit)
 (require 'git-gutter)
 (require 'racket-mode)
+(require 'elm-mode)
+(require 'elixir-mode)
+;(require 'elm-yasnippets)
+;(require 'elixir-yasnippets)
 
 ;;; Load init files
 (mapcar
