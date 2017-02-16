@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: end of file footer
+# key: end
+# expand-env: ((yas-indent-line 'fixed))
+# --
+
+-- End of file

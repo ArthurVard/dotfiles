@@ -1,8 +1,12 @@
+;;;; Created       : ...
+;;;; Last Modified : 2017 Feb 16 (Thu) 08:49:07 AM by Arthur Vardanyan.
+
 ;;; Initialize package system
 (package-initialize)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+(defun user-full-name () "Arthur Vardanyan")
 
 ;;; === CUSTOM CHECK FUNCTION ===
 (defun ensure-package-installed (&rest packages)
@@ -36,7 +40,12 @@
  'magit
  'git-gutter
  'racket-mode
- 'exec-path-from-shell)
+ 'exec-path-from-shell
+
+ 'elm-mode
+ 'elm-yasnippets
+ 'elixir-mode
+ 'elixir-yasnippets)
 
 
 ;; Unbind Suspend/Pesky Sleep Button

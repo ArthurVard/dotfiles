@@ -2,81 +2,252 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/arthur/.emacs.d/themes/" . "emacs-color-theme-solarized/")
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/" . "week02/")
- ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/" . "Hw01/")
+ ("/home/arthur/web-playground/scotty/iot/src/" . "Entity/")
+ ("/home/arthur/web-playground/scotty/iot/" . "src/")
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/" . "heads/")
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/" . "refs/")
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/" . "branches/")
+ ("/home/arthur/web-playground/scotty/iot-rest/src/" . "Config/")
+ ("/home/arthur/web-playground/scotty/iot-rest/" . "src/")
+ ("/home/arthur/web-playground/scotty/api-server/lib/" . "Api/")
+ ("/home/arthur/web-playground/scotty/api-server/" . "lib/")
+ ("/home/arthur/emb-rest-scotty/src/" . "DB/")
+ ("/home/arthur/emb-rest-scotty/" . "src/")
+ ("/home/arthur/web-playground/scotty/" . "iot-rest/")
+ ("/home/arthur/src/haskell/" . "pearls/")
+ ("/home/arthur/src/haskell/pearls/" . "src/")
+ ("/home/arthur/CIS194/byorgey/haskell/" . "2016/")
+ ("/home/arthur/CIS194/byorgey/" . "haskell/")
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/" . "Hw12/")
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/" . "Hw08/")
  ("/home/arthur/CIS194/byorgey/haskell/2016/test/" . "Cis194/")
  ("/home/arthur/CIS194/byorgey/haskell/2016/" . "test/")
  ("/home/arthur/.emacs.d/snippets/" . "haskell-mode/")
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/" . "main/")
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/" . "Cis194/")
  ("/home/arthur/src/" . "racket/")
- ("/home/arthur/.emacs.d/" . "themes/")
- ("/home/arthur/" . ".emacs.d/")
+ ("/home/arthur/.emacs.d/" . "init/")
+ ("/home/arthur/" . "nicta/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/arthur/.emacs.d/"
- "/home/arthur/.emacs.d/themes/emacs-color-theme-solarized/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/week02/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw01/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/"
- "/home/arthur/.emacs.d/snippets/haskell-mode/"
+ "/home/arthur/web-playground/scotty/iot/src/Entity/"
+ "/home/arthur/web-playground/scotty/iot/src/"
+ "/home/arthur/web-playground/scotty/iot/src/DB/"
+ "/home/arthur/web-playground/scotty/iot/bin/"
+ "/home/arthur/web-playground/scotty/iot/db/"
+ "/home/arthur/web-playground/scotty/iot/src/Types/"
+ "/home/arthur/web-playground/scotty/iot/src/Config/"
+ "/home/arthur/web-playground/scotty/iot-rest/.git/"
+ "/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/heads/"
+ "/home/arthur/web-playground/scotty/iot-rest/.git/info/"
+ "/home/arthur/web-playground/scotty/iot-rest/"
+ "/home/arthur/web-playground/scotty/iot-rest/src/"
+ "/home/arthur/web-playground/scotty/iot-rest/src/Entity/"
+ "/home/arthur/web-playground/scotty/iot-rest/src/Config/"
+ "/home/arthur/web-playground/scotty/iot-rest/src/DB/"
+ "/home/arthur/web-playground/scotty/iot-rest/db/"
+ "/var/lib/postgresql/9.5/main/pg_log/"
+ "/home/arthur/web-playground/scotty/api-server/lib/Api/"
+ "/home/arthur/emb-rest-scotty/src/DB/"
+ "/home/arthur/emb-rest-scotty/src/Entity/"
+ "/home/arthur/emb-rest-scotty/config/"
+ "/home/arthur/nicta/"
+ "/home/arthur/web-playground/scotty/scotty-hello-world/"
+ "/home/arthur/web-playground/example-servant-persistent/src/"
+ "/home/arthur/web-playground/example-servant-persistent/"
  "/home/arthur/CIS194/byorgey/haskell/2016/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/main/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw12/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw08/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw08/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw11/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw10/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw11/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/test/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw10/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw06/"
+ "/home/arthur/src/haskell/pearls/src/WordNumber/"
+ "/home/arthur/src/haskell/pearls/src/"
+ "/home/arthur/src/haskell/pearls/"
  "/home/arthur/.emacs.d/init/"
- "/home/arthur/src/racket/"
+ "/home/arthur/CIS194/byorgey/racket/2016/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw03/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw02/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw01/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/"
+ "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/hw02/"
+ "/home/arthur/CIS194/byorgey/"
  "/home/arthur/"
+ "/home/arthur/.emacs.d/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "init.el"
- "solarized-definitions.el"
- "Log.hs"
- "Hw.hs"
- "Test.hs"
- "Doctest.hs"
- "Unittest.hs"
- "UTest.hs"
- "Cis194.hs"
- "utest.hs"
+ "GeoPoint.hs"
+ "Entity.hs"
+ "Dao.hs"
+ "DeviceData.hs"
+ "db.sh"
+ "schema.sql"
+ "Auth.hs"
+ "Server.hs"
+ "Parse.hs"
+ "Types.hs"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/arthur/.emacs.d/" (22532 37606 203776 144000) "../" "ido.last" "init.el" "exec-path-from-shell-1.11/" "smex-items" "./" "snippets/" "elpa/" "snippets_all/" "auto-save-list/" ".gitignore" ".git/" "themes/" "eshell/" ".emacs_bash" "init/")
+ ("/home/arthur/.emacs.d/" (22688 40795 957565 855000) "projectile-bookmarks.eld" ".tmux.conf" "../" "ido.last" "init.el" "smex-items" "./" "snippets/" "elpa/" "snippets_all/" "auto-save-list/" ".gitignore" ".git/" "themes/" "eshell/" ".emacs_bash" "init/")
 
- ("/home/arthur/.emacs.d/themes/emacs-color-theme-solarized/" (22531 34318 722741 711000) "color-theme-solarized-pkg.el" "../" ".travis.yml" "Makefile" "./" "makepkg.sh" ".gitignore" "solarized-theme.el" ".git/" "ert-tests/" "solarized-definitions.el" "color-theme-solarized.el" "LICENSE" "README.md")
+ ("/home/arthur/web-playground/scotty/iot/src/Entity/" (22688 38094 785475 891000) "Device.hs" "Auth.hs" "../" "./" "DeviceData.hs" "User.hs")
 
- ("/home/arthur/.emacs.d/themes/" (22531 34390 268654 8000) "../" "./" "emacs-color-theme-solarized/")
+ ("/home/arthur/web-playground/scotty/iot/src/" (22688 38155 515181 638000) "Config/" "Config.hs" "Auth.hs" "Types/" "../" "DB.hs" "Login.hs" "./" "Entity/" "DB/" "Entity.hs")
 
- ("/home/arthur/" (22531 41876 269011 377000) ".ssh/" ".tmux.conf" "../" "Development/" ".profile~" "Download/" ".bashrc" ".sudo_as_admin_successful" ".bashrc~" "CIS194/" ".profile" ".bash_history" ".gnupg/" ".rbenv/" ".bash_logout" "./" "src/" ".w3m/" ".stack/" "lavash/" ".config/" ".local/" ".cache/" ".emacs.d/" ".ghc/" ".gitconfig")
+ ("/home/arthur/web-playground/scotty/iot/" (22689 15542 125444 398000) "bin/" ".stack-work/" "Main.hs" "../" "Notes.org" "config/" "db/" "./" "src/" ".ghci" ".gitignore" "iot-rest.cabal" "test/" "stack.yaml" "cp.sh" ".git/")
+
+ ("/home/arthur/web-playground/scotty/iot/bin/" (22685 64863 685093 228000) "../" "./" "db.sh")
+
+ ("/home/arthur/web-playground/scotty/iot/src/DB/" (22687 14990 702242 20000) "Dao.hs" "../" "Migrate.hs" "./" "Scheme.hs")
+
+ ("/home/arthur/web-playground/scotty/iot/db/" (22684 47110 21309 71000) "schema.sql" "../" "./")
+
+ ("/home/arthur/web-playground/scotty/iot/src/Types/" (22685 28259 432360 820000) "../" "Server.hs" "./")
+
+ ("/home/arthur/web-playground/scotty/iot/src/Config/" (22684 47110 21309 71000) "../" "Parse.hs" "Types.hs" "./")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/" (22684 47311 722995 735000) ".stack-work/" "../" "./" ".ghci" ".gitignore" ".git/")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/heads/" (22684 46857 738172 184000) "../" "master" "./")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/" (22684 46923 852045 790000) "refs/" "HEAD" "../" "FETCH_HEAD" "info/" "logs/" "config" "description" "index" "./" "branches/" "objects/" "COMMIT_EDITMSG" "hooks/")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/info/" (22665 24204 269237 138000) "../" "exclude" "./")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/branches/" (22665 24204 269237 138000) "../" "./")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/" (22665 24430 948784 864000) "refs/" "HEAD" "../" "./")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/" (22684 46013 102305 6000) "heads/" "remotes/" "../" "./")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/remotes/" (22665 24409 716452 574000) "origin/" "../" "./")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/remotes/origin/" (22684 46405 501256 747000) "new-b" "../" "master" ".#master" "./" "rest" "gh-pages")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/src/Entity/" (22684 25035 115930 903000) "Device.hs" "Auth.hs" ".#AuthToken.hs" "../" "./" "DeviceData.hs" "User.hs")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/src/" (22684 8424 399468 475000) "Config/" "Config.hs" "Auth.hs" "../" "DB.hs" "Login.hs" "./" "Entity/" "DB/" "Entity.hs")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/src/DB/" (22684 8337 345067 824000) "Dao.hs" "../" "Migrate.hs" "./" "Scheme.hs")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/src/Config/" (22677 62161 419688 778000) "../" "Parse.hs" "Types.hs" "./")
+
+ ("/home/arthur/web-playground/scotty/" (22676 52951 303278 157000) "../" "scotty-hello-world/" "api-server/" "./" "scotty-hspec-wai/" "iot-rest/")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/db/" (22681 30781 780697 929000) "schema.sql" "../" "./")
+
+ ("/var/lib/postgresql/9.5/main/pg_log/" (22680 32216 905216 540000) "postgresql-2017-02-01_121940.log" "postgresql-2017-02-06_000000.log" "postgresql-2017-02-04_000000.log" "../" "postgresql-2017-02-04_162505.log" "postgresql-2017-02-05_000000.log" "postgresql-2017-02-04_175213.log" "postgresql-2017-02-03_000000.log" "./" ".#postgresql-2017-02-06_000000.log" "postgresql-2017-02-02_000000.log")
+
+ ("/home/arthur/web-playground/scotty/iot-rest/bin/" (22678 2062 586718 841000) "../" "./" "db.sh")
+
+ ("/home/arthur/web-playground/scotty/api-server/lib/Api/" (22676 52952 811312 114000) "Types/" "../" "Routes.hs" "Server.hs" "Mappers/" "./" "Helpers/" "Abstract.hs" "Controllers/" "Mailers/")
+
+ ("/home/arthur/web-playground/scotty/api-server/lib/" (22676 52952 807312 24000) "../" "Api/" "./")
+
+ ("/home/arthur/web-playground/scotty/api-server/" (22676 52952 811312 114000) "Procfile" "bin/" "cabal.config" "../" ".travis.yml" "Setup.hs" "db/" "api-server.cabal" "./" "src/" "lib/" ".gitignore" "test/" "stack.yaml" ".git/" "LICENSE" "README.md")
+
+ ("/home/arthur/web-playground/scotty/api-server/src/" (22676 52952 811312 114000) "Main.hs" "../" "./")
+
+ ("/home/arthur/emb-rest-scotty/src/DB/" (22662 1313 225558 161000) "Dao.hs" "Core.hs" "../" "SchemeQuery.hs" "DB.hs" "Migrate.hs" "./" "PostgreSQL.hs" "Seeds.hs")
+
+ ("/home/arthur/emb-rest-scotty/src/Entity/" (22662 1313 225558 161000) "Newtypes.hs" "Person.hs" "../" "./" "Order.hs" "User.hs" "Entity.hs" "Product.hs")
+
+ ("/home/arthur/emb-rest-scotty/src/" (22662 1313 225558 161000) "Lucid/" "../" "Init/" "Views/" "./" "Entity/" "DB/" "Entity.hs")
+
+ ("/home/arthur/emb-rest-scotty/" (22673 54961 227431 783000) "notes.org" ".stack-work/" "Main.hs" "run.sh" "../" "config/" "postgresql.config" "./" "src/" ".ghci" "content/" ".gitignore" "stack.yaml" ".git/" "emb-rest.cabal" "README.md")
+
+ ("/home/arthur/emb-rest-scotty/config/" (22662 1313 213557 975000) "../" "settings.yml" "./" "posgreSQL.yml")
+
+ ("/home/arthur/nicta/" (22660 63494 886447 48000) "course.cabal" "projects/" ".stack-work/" "../" "etc/" "README.markdown" "changelog" ".travis.yml" "share/" "2015/" "./" "src/" ".gitignore" "test/" "stack.yaml" ".git/" "Setup.lhs")
+
+ ("/home/arthur/" (22663 34967 42906 431000) ".ssh/" ".tmux.conf" "../" "Development/" ".profile~" "Download/" ".bashrc" ".sudo_as_admin_successful" ".bashrc~" "CIS194/" ".profile" "web-playground/" ".bash_history" ".sqlite_history" ".gnupg/" ".rbenv/" ".bash_logout" "./" "src/" "nicta/" ".w3m/" "imastaser/" ".gem/" ".viminfo" "CIS399/" ".stack/" "lavash/" ".config/" ".local/" ".cache/" ".emacs.d/" "emb-rest-scotty/" ".ghc/" ".bundle/" ".gitconfig")
+
+ ("/home/arthur/web-playground/" (22664 29757 826700 131000) "scotty/" "servant/" "../" "rails/" "./")
+
+ ("/home/arthur/web-playground/scotty/scotty-hello-world/" (22664 29875 472526 570000) "../" "scotty-hello-world.cabal" "Setup.hs" "./" "src/" "test/" "stack.yaml" "app/" "LICENSE")
+
+ ("/home/arthur/web-playground/example-servant-persistent/src/" (22663 36333 927963 113000) "Main.hs" "App.hs" "../" ".#App.hs" "./" "Api.hs" "Models.hs")
+
+ ("/home/arthur/web-playground/example-servant-persistent/" (22663 23194 747548 133000) "example-servant-persistent.cabal" ".stack-work/" "../" ".travis.yml" "Setup.hs" "./" "src/" ".gitignore" "test/" "stack.yaml" ".git/" "LICENSE" "README.md")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw10/" (22638 29528 698689 419000) "AParserTest.hs" "../" "./")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/" (22641 12880 8098 855000) ".stack-work/" "../" "runTest.sh" "cis194.cabal" "module-structure.dot" "Setup.hs" "./" "src/" "ghci.hs" ".ghci" ".gitignore" "test/" "stack.yaml" "benchmark/" "LICENSE" "HLint.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/" (22638 29497 142195 16000) "Main.hs" "../" "./" "Cis194/" "Cis194.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw10/" (22643 36021 656061 765000) "../" "./" "AParser.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw11/" (22641 7082 757760 187000) "../" "./" "SExprTest.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw12/" (22651 6747 654923 772000) "Risk.hs" "../" "./")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw11/" (22643 35938 926783 442000) "../" "./" "SExpr.hs" "AParser.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw08/" (22581 25587 27310 29000) "company.txt" "../" "./" "Employee.hs" "Party.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/" (22637 52329 699523 848000) "../" "Hw05/" "Hw04/" "Hw12/" "Hw01.hs" "Hw02/" "Hw08/" "Hw03/" "./" "Hw11/" "Hw02.hs" "Hw03.hs" "Hw06/" "Hw07/" "Hw10/")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/" (22638 27951 769981 629000) "Unittest.hs" "SpecHelper.hs" "../" "Spec.hs" "Doctest.hs" "./" "Cis194/" "Test.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw08/" (22581 32772 517376 139000) "../" "PartyTest.hs" "./")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw09/" (22530 26702 573305 190000) "../" "./")
+
+ ("/home/arthur/src/haskell/" (22599 52361 879520 482000) ".stack-work/" "playground/" "../" "./" "pearls/")
+
+ ("/home/arthur/src/haskell/pearls/" (22600 2330 130966 494000) ".stack-work/" "../" "Setup.hs" "pearls.cabal" "./" "src/" ".gitignore" "stack.yaml" ".git/" "LICENSE")
+
+ ("/home/arthur/src/haskell/pearls/src/WordNumber/" (22626 31516 698885 204000) "DigitNumber1.hs" "WordNumber2.lhs" "../" "WordNumber3.hs" "./" "WordNumber1.hs" "WordNumber4.lhs" "WordNumber2.hs" "WordNumber3.lhs" "DigitNumber2.hs" "WordNumber1.lhs")
+
+ ("/home/arthur/src/haskell/pearls/src/" (22599 53025 365787 430000) "Main.hs" "../" "./" "WordNumber.hs" "WordNumber/")
+
+ ("/home/arthur/.emacs.d/snippets/haskell-mode/" (22580 34844 509337 226000) "new class" "print" "module" "import" "functione" "end" "../" "doc" "ex" "efix" "instance" "function" "main" "./" "pragma" "case" "data" "ex1" "test")
+
+ ("/home/arthur/.emacs.d/init/" (22573 49898 1870 955000) "haskell.el" "../" "fci.el" "global.el" "./" "smartparens.el" "web-mode.el" "smex.el" "hcTimestamp.el" "shell.el")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/" (22567 25349 23264 922000) "Hw01/" "../" "Hw05/" "Hw04/" "Hw12/" "Hw02/" "Hw08/" "Hw03/" "./" "Hw11/" "Hw09/" "Test.hs" "Hw07/" "Hw10/")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw01/" (22548 9846 204566 731000) "../" "./" "UTest.hs" "HSpec.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw03/" (22534 6988 948634 78000) "../" "./" "GolfSpec.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw06/" (22570 50300 529352 710000) "Fibonacci.hs" "../" "./")
+
+ ("/home/arthur/CIS194/byorgey/racket/" (22529 10554 180998 29000) "../" "2016/" "./")
+
+ ("/home/arthur/CIS194/byorgey/racket/2016/" (22570 1012 342782 264000) "../" "Hw01.rkt" "./" "Hw06/")
+
+ ("/home/arthur/CIS194/byorgey/racket/2016/Hw06/" (22570 1054 575954 854000) "../" ".#Fibonacci.rkt" "./" "Fibonacci.rkt")
+
+ ("/home/arthur/CIS194/byorgey/" (22533 55367 930354 675000) "haskell/" "lectures/" "../" "racket/" "style.pdf" "./" "README.org")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw02/" (22533 60429 1281 931000) "LogAnalysis.hs" "../" "Log.hs" "sample.log" "./" "error.log")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw02/" (22533 919 942165 779000) "../" "./" "UTest.hs" "HSpec.hs")
+
+ ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/hw02/" (22532 58439 768370 515000) "LogAnalysis.hs" "../" "./")
+
+ ("/home/arthur/CIS194/byorgey/haskell/" (22523 57411 145964 227000) "../" "2016/" "2014/" "2015/" "./" ".ghci" ".gitignore" "README.org")
+
+ ("/home/arthur/CIS194/" (22530 37714 552004 736000) "wholemeal-programming-ICFP09.pdf" "../" "hanoi-mmf2001a.pdf" "./" "reisenberg/" "hanoi-handout-2.pdf" "hanoi-4-pigs-iteerative.pdf" ".gitignore" "wholemeal-example-sudoku.lhs" "byorgey/" "README.org" ".git/" "problem-on-streams.txt")
 
  ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/week02/" (22531 33590 855287 302000) "../" "Log.hs" "sample.log" "./" "Hw.hs" "error.log")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/" (22531 33335 60450 632000) "../" "Hw01.hs" "week02/" "./")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/" (22530 38977 513829 279000) ".stack-work/" "../" "cis194.cabal" "Setup.hs" "./" "src/" ".ghci" ".gitignore" "test/" "stack.yaml" "benchmark/" "LICENSE")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/" (22530 33969 535712 217000) "Main.hs" "../" "./" "Cis194/" "Cis194.hs")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/test/" (22530 41676 289963 279000) "Unittest.hs" "../" "Spec.hs" "Doctest.hs" "./" "Cis194/")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/" (22530 41742 719734 662000) "Hw01/" "../" "Hw05/" "Hw04/" "Hw12/" "Hw02/" "Hw08/" "Hw03/" "./" "Hw11/" "Hw09/" "Test.hs" "Hw06/" "Hw07/" "Hw10/")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw01/" (22530 37481 413753 562000) "../" "./" "UTest.hs" "HSpec.hs")
-
- ("/home/arthur/.emacs.d/snippets/haskell-mode/" (22529 51784 551569 432000) "new class" "print" "module" "import" "functione" "../" "doc" "ex" "efix" "instance" "function" "main" "./" "pragma" "case" "data" "ex1")
 
  ("/home/arthur/CIS194/byorgey/haskell/2016/src/main/" (22528 60492 451916 273000) "Main.hs" "../" "Doctest.hs" "./")
 
  ("/home/arthur/.emacs.d/snippets/" (22529 51033 183461 935000) "scala-mode/" "../" "ruby-mode/" "./" "haskell-mode/" "org-mode/" "web-mode/" "yaml-mode/" "html-mode/")
-
- ("/home/arthur/.emacs.d/init/" (22528 40203 849683 639000) "haskell.el" "../" "fci.el" "global.el" "./" "smartparens.el" "web-mode.el" "smex.el" "shell.el")
 
  ("/home/arthur/src/racket/" (22528 31995 894326 423000) "test.rkt" "../" "./")
 

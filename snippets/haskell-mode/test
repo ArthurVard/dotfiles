@@ -1,0 +1,46 @@
+# -*- mode: snippet -*-
+# name: tst
+# key: tst
+# expand-env: ((yas-indent-line 'fixed))
+# --
+module Module
+           ($0Tests)
+    where
+
+import Test.Tasty        (testGroup, TestTree)
+import Test.Tasty.SmallCheck as SC
+import Test.Tasty.QuickCheck as QC
+import Test.Tasty.HUnit
+
+import Cis194
+
+${0:Tests} :: TestTree
+${0:Tests} = testGroup ${0:tests} [unitTests, properties]
+
+properties :: TestTree
+properties = testGroup "Properties" [scProps, qcProps]
+
+unitTests :: TestTree
+unitTests = testGroup "Unit tests"
+            [
+              testCase "IndexJ left" testIndexLeft
+            , testCase "IndexJ right" testIndexRight
+
+            ]
+qcProps :: TestTree
+qcProps  = testGroup "(checked by QuickCheck)"
+           [
+             QC.testProperty "IndexSame" $
+               \i -> indexJ i left == indexJ i right
+
+           ]
+
+scProps :: TestTree
+scProps = testGroup "(checked by SmallCheck)"
+          []
+
+-- | SmallCheck
+
+-- | QuickCheck
+
+-- | UnitTest

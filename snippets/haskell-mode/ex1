@@ -1,7 +1,9 @@
 # -*- mode: snippet -*-
-# name: exercise header separator
-# key: ex
+# name: file header info: create time modified time
+# key: header
 # expand-env: ((yas-indent-line 'fixed))
 # --
-------------------------------------------------------------------------------
--- Exercise $0
+{--
+        Created       : 2016 Nov 22 (Tue) 06:09:39 AM by Arthur Vardanyan.
+        Last Modified : 2016 Nov 22 (Tue) 06:09:58 AM by Arthur Vardanyan.
+--}

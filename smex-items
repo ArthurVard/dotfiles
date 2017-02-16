@@ -2,29 +2,43 @@
 ;; ----- smex-history -----
 (
  magit-status
- package-install-file
- load-theme
- eval-buffer
- magit-push
- eshell
- shrink-window
+ package-list-packages
+ insert-create-and-modifystamp
+ goto-line
+ project-find-regexp
+ indent-rigidly-left-to-tab-stop
+ projectile-mode
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 7)
- (shrink-window . 10)
+ (eval-buffer . 12)
+ (shrink-window . 57)
  (ido-push-dir . 1)
  (haskell-move-nested-left . 1)
  (haskell-move-nested-right . 1)
  (magit-mode . 1)
  (org-mode . 1)
- (magit-status . 8)
+ (magit-status . 60)
  (yas-reload-all . 1)
- (fci-mode . 3)
+ (fci-mode . 8)
  (term . 1)
  (eshell . 1)
- (magit-push . 2)
+ (magit-push . 14)
  (load-theme . 24)
  (package-install-file . 4)
+ (insert-create-and-modifystamp . 14)
+ (make-directory . 1)
+ (magit-init . 1)
+ (shell . 6)
+ (goto-line . 13)
+ (indent-to . 2)
+ (indent-rigidly-left-to-tab-stop . 8)
+ (indent-to-column . 1)
+ (indent-region . 1)
+ (customize-themes . 3)
+ (project-find-regexp . 4)
+ (projectile-find-file . 1)
+ (projectile-mode . 1)
+ (package-list-packages . 1)
 )
