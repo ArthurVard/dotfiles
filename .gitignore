@@ -1,4 +1,4 @@
-
+projectile-bookmarks.eld
 ido.last
 *~
 ~*
@@ -6,6 +6,7 @@ ido.last
 */*~
 \#*\#
 
+/eshell
 /elpa* 
 /el-get
 /elpa_old

@@ -1,0 +1,1 @@
+emacs configuration based on package.el
