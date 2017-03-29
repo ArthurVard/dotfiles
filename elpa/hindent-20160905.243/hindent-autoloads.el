@@ -1,10 +1,10 @@
 ;;; hindent-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "hindent" "hindent.el" (22524 59383 398631
-;;;;;;  659000))
+;;;### (autoloads nil "hindent" "hindent.el" (22747 24423 354789
+;;;;;;  362000))
 ;;; Generated autoloads from hindent.el
 
 (autoload 'hindent-mode "hindent" "\

@@ -2,11 +2,24 @@
 ;;;; Last Modified : 2017 Feb 16 (Thu) 09:12:26 AM by Arthur Vardanyan.
 
 ;;; Initialize package system
-(package-initialize)
+(require 'package)
+
+
+(add-to-list 'package-archives
+	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+
+
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+
+(package-initialize)
+
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
 (defun user-full-name () "Arthur Vardanyan")
+
 
 ;;; === CUSTOM CHECK FUNCTION ===
 (defun ensure-package-installed (&rest packages)
@@ -101,7 +114,7 @@
 ;;; Load init files
 (mapcar
  (lambda (f) (load-file f))
- (file-expand-wildcards "~/.emacs.d/init/*.el"))
+ (file-expand-wildcards "~/.emacs.d/lisp-init/*.el"))
 
 
 ;;; exec shell

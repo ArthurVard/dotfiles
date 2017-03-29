@@ -1,10 +1,10 @@
 ;;; elixir-yasnippets-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
 ;;;### (autoloads nil "elixir-yasnippets" "elixir-yasnippets.el"
-;;;;;;  (22693 22824 784415 523000))
+;;;;;;  (22747 24449 523521 401000))
 ;;; Generated autoloads from elixir-yasnippets.el
 
 (autoload 'elixir-snippets-initialize "elixir-yasnippets" "\
@@ -16,8 +16,8 @@
 
 ;;;***
 
-;;;### (autoloads nil nil ("elixir-yasnippets-pkg.el") (22693 22824
-;;;;;;  468406 658000))
+;;;### (autoloads nil nil ("elixir-yasnippets-pkg.el") (22747 24449
+;;;;;;  540398 508000))
 
 ;;;***
 

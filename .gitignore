@@ -1,4 +1,15 @@
+
+ido.last
 *~
 ~*
 */~*
 */*~
+\#*\#
+
+/elpa* 
+/el-get
+/elpa_old
+auto-save-list
+elm-stuff
+elm-package.json
+repl-temp*.elm

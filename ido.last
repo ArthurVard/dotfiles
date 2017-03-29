@@ -2,6 +2,23 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/arthur/web-playground/scotty/iot/test/Api/" . "Routes/")
+ ("/home/arthur/web-playground/scotty/iot/test/" . "Api/")
+ ("/home/arthur/elm/albums/frontend/" . "src/")
+ ("/home/arthur/elm/elm-app-jwt-api/" . "src/")
+ ("/home/arthur/elm/elm-architecture-tutorial/" . "examples/")
+ ("/home/arthur/elm/" . "elm-architecture-tutorial/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/2.0.0/src/" . "Html/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/2.0.0/" . "src/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/" . "2.0.0/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/" . "html/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/" . "elm-lang/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/elm-lang/elm-architecture-tutorial/" . "1.0.0/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/elm-lang/" . "elm-architecture-tutorial/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/" . "elm-lang/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/" . "0.18.0/")
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/" . "packages/")
+ ("/home/arthur/elm-architecture-tutorial/" . "examples/")
  ("/home/arthur/web-playground/scotty/iot/src/" . "Entity/")
  ("/home/arthur/web-playground/scotty/iot/" . "src/")
  ("/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/" . "heads/")
@@ -13,7 +30,7 @@
  ("/home/arthur/web-playground/scotty/api-server/" . "lib/")
  ("/home/arthur/emb-rest-scotty/src/" . "DB/")
  ("/home/arthur/emb-rest-scotty/" . "src/")
- ("/home/arthur/web-playground/scotty/" . "iot-rest/")
+ ("/home/arthur/web-playground/scotty/" . "iot/")
  ("/home/arthur/src/haskell/" . "pearls/")
  ("/home/arthur/src/haskell/pearls/" . "src/")
  ("/home/arthur/CIS194/byorgey/haskell/" . "2016/")
@@ -26,18 +43,38 @@
  ("/home/arthur/CIS194/byorgey/haskell/2016/src/" . "Cis194/")
  ("/home/arthur/src/" . "racket/")
  ("/home/arthur/.emacs.d/" . "init/")
- ("/home/arthur/" . "nicta/")
+ ("/home/arthur/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/var/lib/postgresql/9.5/main/pg_log/"
+ "/home/arthur/web-playground/scotty/iot/test/"
+ "/home/arthur/web-playground/scotty/iot/test/Api/Routes/"
  "/home/arthur/web-playground/scotty/iot/src/Entity/"
- "/home/arthur/web-playground/scotty/iot/src/"
  "/home/arthur/web-playground/scotty/iot/src/DB/"
- "/home/arthur/web-playground/scotty/iot/bin/"
+ "/home/arthur/web-playground/scotty/iot/src/"
+ "/home/arthur/web-playground/scotty/iot/config/"
  "/home/arthur/web-playground/scotty/iot/db/"
- "/home/arthur/web-playground/scotty/iot/src/Types/"
+ "/home/arthur/web-playground/scotty/iot/bin/"
+ "/home/arthur/web-playground/scotty/iot/"
+ "/home/arthur/web-playground/scotty/iot/test/shell/"
  "/home/arthur/web-playground/scotty/iot/src/Config/"
+ "/home/arthur/web-playground/scotty/iot/src/Types/"
+ "/home/arthur/"
+ "/home/arthur/web-playground/sockets/iot-udp/"
+ "/home/arthur/.emacs.d/init/"
+ "/home/arthur/.emacs.d/"
+ "/home/arthur/web-playground/yesod/iotrest/"
+ "/home/arthur/web-playground/yesod/sasonweb/"
+ "/home/arthur/elm/albums/frontend/src/"
+ "/home/arthur/elm/elm-app-jwt-api/src/"
+ "/home/arthur/elm/elm-architecture-tutorial/examples/"
+ "/home/arthur/elm/elm-app-jwt-api/"
+ "/home/arthur/elm/elm-architecture-tutorial/"
+ "/home/arthur/elm-architecture-tutorial/examples/"
+ "/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/2.0.0/src/"
+ "/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/elm-lang/elm-architecture-tutorial/1.0.0/"
  "/home/arthur/web-playground/scotty/iot-rest/.git/"
  "/home/arthur/web-playground/scotty/iot-rest/.git/logs/refs/heads/"
  "/home/arthur/web-playground/scotty/iot-rest/.git/info/"
@@ -47,7 +84,6 @@
  "/home/arthur/web-playground/scotty/iot-rest/src/Config/"
  "/home/arthur/web-playground/scotty/iot-rest/src/DB/"
  "/home/arthur/web-playground/scotty/iot-rest/db/"
- "/var/lib/postgresql/9.5/main/pg_log/"
  "/home/arthur/web-playground/scotty/api-server/lib/Api/"
  "/home/arthur/emb-rest-scotty/src/DB/"
  "/home/arthur/emb-rest-scotty/src/Entity/"
@@ -62,60 +98,119 @@
  "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw08/"
  "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw11/"
  "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw10/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw11/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw10/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw06/"
- "/home/arthur/src/haskell/pearls/src/WordNumber/"
- "/home/arthur/src/haskell/pearls/src/"
- "/home/arthur/src/haskell/pearls/"
- "/home/arthur/.emacs.d/init/"
- "/home/arthur/CIS194/byorgey/racket/2016/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw03/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw02/"
- "/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw01/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/"
- "/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/hw02/"
- "/home/arthur/CIS194/byorgey/"
- "/home/arthur/"
- "/home/arthur/.emacs.d/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "GeoPoint.hs"
- "Entity.hs"
- "Dao.hs"
- "DeviceData.hs"
- "db.sh"
- "schema.sql"
- "Auth.hs"
- "Server.hs"
- "Parse.hs"
- "Types.hs"
+ "postgresql-2017-03-26_000000.log"
+ "postgresql-2017-02-01_121940.log"
+ "postgresql-2017-03-22_000000.log"
+ "SpecHelper.hs"
+ "DeviceSpec.hs"
+ "Spec.hs"
+ "Device.hs"
+ "Seeds.hs"
+ "Config.hs"
+ "Migrate.hs"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/arthur/.emacs.d/" (22688 40795 957565 855000) "projectile-bookmarks.eld" ".tmux.conf" "../" "ido.last" "init.el" "smex-items" "./" "snippets/" "elpa/" "snippets_all/" "auto-save-list/" ".gitignore" ".git/" "themes/" "eshell/" ".emacs_bash" "init/")
+ ("/var/lib/postgresql/9.5/main/pg_log/" (22743 55546 539501 915000) "postgresql-2017-02-01_121940.log" "postgresql-2017-02-06_000000.log" "postgresql-2017-03-23_000000.log" "postgresql-2017-02-13_000000.log" "postgresql-2017-02-04_000000.log" "postgresql-2017-02-20_000000.log" "postgresql-2017-03-13_000000.log" "postgresql-2017-02-26_000000.log" "../" "postgresql-2017-02-04_162505.log" "postgresql-2017-02-22_000000.log" "postgresql-2017-03-24_000000.log" "postgresql-2017-02-05_000000.log" "postgresql-2017-03-18_000000.log" "postgresql-2017-03-20_000000.log" "postgresql-2017-03-14_000000.log" "postgresql-2017-02-28_000000.log" "postgresql-2017-02-25_000000.log" "postgresql-2017-03-11_000000.log" "postgresql-2017-02-12_000000.log" "postgresql-2017-02-04_175213.log" "postgresql-2017-03-10_000000.log" "postgresql-2017-02-18_182419.log" "postgresql-2017-03-19_000000.log" "postgresql-2017-02-19_000000.log" "postgresql-2017-02-16_000000.log" "postgresql-2017-02-03_000000.log" "postgresql-2017-03-22_000000.log" "postgresql-2017-03-08_000000.log" "postgresql-2017-02-18_000000.log" "postgresql-2017-03-04_000000.log" "postgresql-2017-03-01_000000.log" "./" "postgresql-2017-02-09_000000.log" "postgresql-2017-02-11_000000.log" "postgresql-2017-02-17_000000.log" "postgresql-2017-02-15_000000.log" "postgresql-2017-03-15_000000.log" "postgresql-2017-02-23_000000.log" "postgresql-2017-03-09_000000.log" "postgresql-2017-03-12_000000.log" "postgresql-2017-02-08_000000.log" "postgresql-2017-02-24_000000.log" "postgresql-2017-02-27_000000.log" "postgresql-2017-02-14_000000.log" "postgresql-2017-02-21_134931.log" "postgresql-2017-02-13_182432.log" "postgresql-2017-03-21_000000.log" "postgresql-2017-03-02_000000.log" "postgresql-2017-03-25_000000.log" "postgresql-2017-03-26_000000.log" "postgresql-2017-03-03_000000.log" "postgresql-2017-03-17_000000.log" "postgresql-2017-02-02_000000.log" "postgresql-2017-03-16_000000.log" "postgresql-2017-02-21_000000.log" "postgresql-2017-02-07_000000.log" "postgresql-2017-03-06_000000.log" "postgresql-2017-02-10_000000.log" "postgresql-2017-03-05_000000.log" "postgresql-2017-03-07_000000.log")
 
- ("/home/arthur/web-playground/scotty/iot/src/Entity/" (22688 38094 785475 891000) "Device.hs" "Auth.hs" "../" "./" "DeviceData.hs" "User.hs")
+ ("/home/arthur/web-playground/scotty/iot/src/" (22730 27838 857927 749000) "Config/" "Config.hs" "Auth.hs" "Types/" "../" "DB.hs" "Routes.hs" "Server.hs" "Login.hs" "./" "Entity/" "DB/" "Entity.hs" "Error.hs")
 
- ("/home/arthur/web-playground/scotty/iot/src/" (22688 38155 515181 638000) "Config/" "Config.hs" "Auth.hs" "Types/" "../" "DB.hs" "Login.hs" "./" "Entity/" "DB/" "Entity.hs")
+ ("/home/arthur/web-playground/scotty/iot/" (22730 19559 950122 678000) "AverageTime.hs" "bin/" ".stack-work/" "Main.hs" "../" "Notes.org" "config/" "db/" "freeze.dep" "./" "src/" ".ghci" ".gitignore" "iot-rest.cabal" "test/" "stack.yaml" "cp.sh" ".git/")
 
- ("/home/arthur/web-playground/scotty/iot/" (22689 15542 125444 398000) "bin/" ".stack-work/" "Main.hs" "../" "Notes.org" "config/" "db/" "./" "src/" ".ghci" ".gitignore" "iot-rest.cabal" "test/" "stack.yaml" "cp.sh" ".git/")
+ ("/home/arthur/web-playground/scotty/iot/test/" (22730 29399 645692 481000) "SpecHelper.hs" "../" "shell/" "Spec.hs" "Api/" "EndPoint.hs" "./")
 
- ("/home/arthur/web-playground/scotty/iot/bin/" (22685 64863 685093 228000) "../" "./" "db.sh")
+ ("/home/arthur/web-playground/scotty/iot/test/Api/Routes/" (22730 29357 936527 384000) "../" "./" "DeviceSpec.hs")
 
- ("/home/arthur/web-playground/scotty/iot/src/DB/" (22687 14990 702242 20000) "Dao.hs" "../" "Migrate.hs" "./" "Scheme.hs")
+ ("/home/arthur/web-playground/scotty/iot/test/Api/Entity/" (22730 20747 55326 159000) "../" "./" "DeviceSpec.hs")
 
- ("/home/arthur/web-playground/scotty/iot/db/" (22684 47110 21309 71000) "schema.sql" "../" "./")
+ ("/home/arthur/web-playground/scotty/iot/src/DB/" (22728 63975 443439 137000) "Dao.hs" "../" "Migrate.hs" "./" "Scheme.hs" "Seeds.hs")
+
+ ("/home/arthur/" (22727 41556 501918 598000) ".ssh/" ".tmux.conf" ".ivy2/" "../" "Development/" ".profile~" "Download/" ".bashrc" ".sudo_as_admin_successful" ".bashrc~" "iot.log" "CIS194/" "evm/" ".npm/" ".profile" "web-playground/" ".nvm/" ".bash_history" ".sqlite_history" ".gnupg/" ".rbenv/" ".wget-hsts" ".bash_logout" "./" "src/" "riskindent-problem/" ".sbt/" "iot-test.log" "nicta/" ".w3m/" "imastaser/" ".gem/" ".viminfo" "CIS399/" ".stack/" "lavash/" ".config/" ".local/" "elm/" ".elm/" ".cache/" ".emacs.d/" ".ghc/" ".cabal/" ".bundle/" ".gitconfig" "simple-project/")
+
+ ("/home/arthur/web-playground/scotty/iot/src/Config/" (22727 41354 428255 533000) "../" "Parse.hs" "Types.hs" "./")
+
+ ("/home/arthur/web-playground/scotty/iot/config/" (22684 47110 21309 71000) "../" "./" "database.config")
+
+ ("/home/arthur/web-playground/scotty/iot/src/Entity/" (22726 39134 739043 872000) "Device.hs" "Auth.hs" "../" "Log.hs" "./" "DeviceData.hs" "GeoPoint.hs" "JsonB.hs")
+
+ ("/home/arthur/web-playground/scotty/iot/bin/" (22726 42530 169861 680000) "../" "./" "db.sh")
+
+ ("/home/arthur/web-playground/scotty/iot/test/Api/" (22726 40712 491199 184000) "../" "./" "Routes/" "Entity/")
+
+ ("/home/arthur/web-playground/scotty/iot/test/shell/" (22693 45307 232325 830000) "../" "list_data.sh" "benchmarks/" "monitor_tcp.sh" "list_devices.sh" "create_device_request.json" "./" "create_device.sh" "create_device_request.json.template" "create_data.sh")
+
+ ("/home/arthur/.emacs.d/" (22723 59086 810461 722000) "projectile-bookmarks.eld" ".tmux.conf" "../" "elm-package.json" "ido.last" "repl-temp-000.elm" "init.el" "smex-items" "./" "snippets/" "elpa/" "snippets_all/" "auto-save-list/" ".gitignore" ".git/" "elm-stuff/" "themes/" "eshell/" ".emacs_bash" "init/")
+
+ ("/home/arthur/web-playground/scotty/iot/db/" (22723 58049 813377 235000) "schema.sql" "../" "./")
+
+ ("/home/arthur/stack-overflow/src/2017/" (22723 32910 358841 996000) "SoJson.hs" "../" "so-log.txt" "./" "SoLog.hs")
+
+ ("/home/arthur/web-playground/" (22706 44197 126273 848000) "scotty/" "servant/" "../" "yesod/" "sockets/" "rails/" "./")
+
+ ("/home/arthur/web-playground/scotty/" (22706 44165 157375 528000) "../" "iot/" "scotty-hello-world/" "service-publish/" "api-server/" "./" "emb-rest-scotty/" "scotty-hspec-wai/")
+
+ ("/home/arthur/elm/elm-app-jwt-api/" (22693 58895 428865 845000) "../" "elm-package.json" "Main.js" "./" "src/" ".gitignore" "package.json" "gulpfile.js" "elm.js" ".git/" "elm-stuff/" "README.md")
+
+ ("/home/arthur/elm/elm-app-jwt-api/src/" (22693 58863 271962 548000) "styles.css" "../" "Main.js" "index.html" "./" "Main.elm")
+
+ ("/home/arthur/web-playground/yesod/sasonweb/" (22697 34108 582474 837000) "Handler/" "sasonweb.cabal_old" "../" "devel.hs" "Settings.hs" "Foundation.hs" "deploy/" "config/" "messages/" "static/" "Import.hs" "sas9.0.cfg" "tests/" "Application.hs" "./" ".cabal-sandbox/" ".ghci" "Helpers/" ".gitignore" "sasonweb.cabal" "templates/" "Model.hs" ".git/" "app/" "README.md" "Settings/")
+
+ ("/home/arthur/web-playground/yesod/iotrest/" (22697 33053 292852 269000) "Handler/" ".stack-work/" "../" "Settings.hs" "Foundation.hs" "config/" "static/" "Import.hs" "iotrest.cabal" ".dir-locals.el" "Application.hs" "Import/" "./" ".gitignore" "yesod-devel/" "templates/" "Model.hs" "test/" "stack.yaml" "app/" "Settings/")
+
+ ("/home/arthur/.emacs.d/init/" (22706 45904 142424 722000) "haskell.el" "../" "fci.el" "global.el" "./" "smartparens.el" "web-mode.el" "smex.el" "hcTimestamp.el" "shell.el")
+
+ ("/home/arthur/web-playground/sockets/iot-udp/" (22706 46516 959758 344000) ".stack-work/" "../" "Setup.hs" "./" "src/" "iot-udp.cabal" "test/" "stack.yaml" "app/" "LICENSE")
+
+ ("/home/arthur/web-playground/sockets/iot-udp/src/" (22706 45841 360641 16000) "../" "Lib.hs" "./")
+
+ ("/home/arthur/riskindent-problem/" (22699 62037 515704 49000) "../" "./" "AverageWaitTime.hs")
+
+ ("/home/arthur/elm/albums/frontend/" (22695 7972 514619 871000) "../" "elm-package.json" "node_modules/" "./" "src/" "package.json" "webpack.config.js" "elm-stuff/")
+
+ ("/home/arthur/elm/albums/frontend/src/" (22695 2173 759748 468000) "assets/" "Home.elm" "TrackRow.elm" "AlbumDetail.elm" "../" "ServerApi.elm" "index.js" "index.html" "./" "Main.elm" "Routes.elm" "ArtistListing.elm" "ArtistDetail.elm")
+
+ ("/home/arthur/elm/" (22693 46134 179390 459000) "create-elm-app.sh" "elm-app-jwt-api/" "playground/" "elm-architecture-tutorial/" "../" "./" ".gitignore")
+
+ ("/home/arthur/elm/elm-architecture-tutorial/examples/" (22693 29123 136429 312000) "04-random.elm" "../" "03-form.elm" "06-clock.elm" "07-websockets.elm" "01-button.elm" "./" "09-radio.elm" "02-field.elm" "08-checkboxes.elm" "05-http.elm")
+
+ ("/home/arthur/elm/playground/" (22693 44904 681100 510000) "../" "elm-package.json" "./" "elm-stuff/")
+
+ ("/home/arthur/elm/elm-architecture-tutorial/" (22693 25724 969963 728000) "../" "elm-package.json" "examples/" "./" ".gitignore" "elm.js" ".git/" "elm-stuff/" "LICENSE" "README.md")
+
+ ("/home/arthur/elm-architecture-tutorial/examples/" (22693 24644 379575 831000) "04-random.elm" "../" "03-form.elm" "06-clock.elm" "07-websockets.elm" "01-button.elm" "./" "09-radio.elm" "02-field.elm" "08-checkboxes.elm" "05-http.elm")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/2.0.0/src/Html/" (22693 25328 322814 540000) "../" "Events.elm" "./" "Attributes.elm" "Lazy.elm" "Keyed.elm")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/2.0.0/src/" (22693 25328 322814 540000) "../" "Html/" "./" "Html.elm")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/2.0.0/" (22693 25328 322814 540000) "../" "elm-package.json" "properties-vs-attributes.md" "./" "src/" ".gitignore" "LICENSE" "README.md")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/html/" (22693 25328 322814 540000) "../" "2.0.0/" "./")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/elm-lang/" (22693 25329 714853 674000) "http/" "html/" "../" "core/" "./" "virtual-dom/" "websocket/" "svg/")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/packages/" (22693 25329 714853 674000) "../" "./" "elm-lang/" "evancz/")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/elm-lang/elm-architecture-tutorial/1.0.0/" (22693 25334 286982 210000) "Main.elmo" "../" "./" "Main.elmi")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/elm-lang/elm-architecture-tutorial/" (22693 25334 286982 210000) "../" "./" "1.0.0/")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/elm-lang/" (22693 25334 286982 210000) "http/" "html/" "elm-architecture-tutorial/" "../" "core/" "./" "virtual-dom/" "websocket/" "svg/")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/0.18.0/" (22693 25329 894858 735000) "../" "./" "elm-lang/" "evancz/")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/build-artifacts/" (22693 25329 762855 24000) "../" "./" "0.18.0/")
+
+ ("/home/arthur/elm-architecture-tutorial/elm-stuff/" (22693 25329 762855 24000) "../" "packages/" "build-artifacts/" "./" "exact-dependencies.json")
+
+ ("/home/arthur/elm-architecture-tutorial/" (22693 25428 409628 149000) "../" "elm-package.json" "examples/" "./" ".gitignore" ".git/" "elm-stuff/" "LICENSE" "README.md")
 
  ("/home/arthur/web-playground/scotty/iot/src/Types/" (22685 28259 432360 820000) "../" "Server.hs" "./")
-
- ("/home/arthur/web-playground/scotty/iot/src/Config/" (22684 47110 21309 71000) "../" "Parse.hs" "Types.hs" "./")
 
  ("/home/arthur/web-playground/scotty/iot-rest/" (22684 47311 722995 735000) ".stack-work/" "../" "./" ".ghci" ".gitignore" ".git/")
 
@@ -143,11 +238,7 @@
 
  ("/home/arthur/web-playground/scotty/iot-rest/src/Config/" (22677 62161 419688 778000) "../" "Parse.hs" "Types.hs" "./")
 
- ("/home/arthur/web-playground/scotty/" (22676 52951 303278 157000) "../" "scotty-hello-world/" "api-server/" "./" "scotty-hspec-wai/" "iot-rest/")
-
  ("/home/arthur/web-playground/scotty/iot-rest/db/" (22681 30781 780697 929000) "schema.sql" "../" "./")
-
- ("/var/lib/postgresql/9.5/main/pg_log/" (22680 32216 905216 540000) "postgresql-2017-02-01_121940.log" "postgresql-2017-02-06_000000.log" "postgresql-2017-02-04_000000.log" "../" "postgresql-2017-02-04_162505.log" "postgresql-2017-02-05_000000.log" "postgresql-2017-02-04_175213.log" "postgresql-2017-02-03_000000.log" "./" ".#postgresql-2017-02-06_000000.log" "postgresql-2017-02-02_000000.log")
 
  ("/home/arthur/web-playground/scotty/iot-rest/bin/" (22678 2062 586718 841000) "../" "./" "db.sh")
 
@@ -170,10 +261,6 @@
  ("/home/arthur/emb-rest-scotty/config/" (22662 1313 213557 975000) "../" "settings.yml" "./" "posgreSQL.yml")
 
  ("/home/arthur/nicta/" (22660 63494 886447 48000) "course.cabal" "projects/" ".stack-work/" "../" "etc/" "README.markdown" "changelog" ".travis.yml" "share/" "2015/" "./" "src/" ".gitignore" "test/" "stack.yaml" ".git/" "Setup.lhs")
-
- ("/home/arthur/" (22663 34967 42906 431000) ".ssh/" ".tmux.conf" "../" "Development/" ".profile~" "Download/" ".bashrc" ".sudo_as_admin_successful" ".bashrc~" "CIS194/" ".profile" "web-playground/" ".bash_history" ".sqlite_history" ".gnupg/" ".rbenv/" ".bash_logout" "./" "src/" "nicta/" ".w3m/" "imastaser/" ".gem/" ".viminfo" "CIS399/" ".stack/" "lavash/" ".config/" ".local/" ".cache/" ".emacs.d/" "emb-rest-scotty/" ".ghc/" ".bundle/" ".gitconfig")
-
- ("/home/arthur/web-playground/" (22664 29757 826700 131000) "scotty/" "servant/" "../" "rails/" "./")
 
  ("/home/arthur/web-playground/scotty/scotty-hello-world/" (22664 29875 472526 570000) "../" "scotty-hello-world.cabal" "Setup.hs" "./" "src/" "test/" "stack.yaml" "app/" "LICENSE")
 
@@ -215,8 +302,6 @@
 
  ("/home/arthur/.emacs.d/snippets/haskell-mode/" (22580 34844 509337 226000) "new class" "print" "module" "import" "functione" "end" "../" "doc" "ex" "efix" "instance" "function" "main" "./" "pragma" "case" "data" "ex1" "test")
 
- ("/home/arthur/.emacs.d/init/" (22573 49898 1870 955000) "haskell.el" "../" "fci.el" "global.el" "./" "smartparens.el" "web-mode.el" "smex.el" "hcTimestamp.el" "shell.el")
-
  ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/" (22567 25349 23264 922000) "Hw01/" "../" "Hw05/" "Hw04/" "Hw12/" "Hw02/" "Hw08/" "Hw03/" "./" "Hw11/" "Hw09/" "Test.hs" "Hw07/" "Hw10/")
 
  ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw01/" (22548 9846 204566 731000) "../" "./" "UTest.hs" "HSpec.hs")
@@ -230,28 +315,6 @@
  ("/home/arthur/CIS194/byorgey/racket/2016/" (22570 1012 342782 264000) "../" "Hw01.rkt" "./" "Hw06/")
 
  ("/home/arthur/CIS194/byorgey/racket/2016/Hw06/" (22570 1054 575954 854000) "../" ".#Fibonacci.rkt" "./" "Fibonacci.rkt")
-
- ("/home/arthur/CIS194/byorgey/" (22533 55367 930354 675000) "haskell/" "lectures/" "../" "racket/" "style.pdf" "./" "README.org")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/Hw02/" (22533 60429 1281 931000) "LogAnalysis.hs" "../" "Log.hs" "sample.log" "./" "error.log")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/test/Cis194/Hw02/" (22533 919 942165 779000) "../" "./" "UTest.hs" "HSpec.hs")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/hw02/" (22532 58439 768370 515000) "LogAnalysis.hs" "../" "./")
-
- ("/home/arthur/CIS194/byorgey/haskell/" (22523 57411 145964 227000) "../" "2016/" "2014/" "2015/" "./" ".ghci" ".gitignore" "README.org")
-
- ("/home/arthur/CIS194/" (22530 37714 552004 736000) "wholemeal-programming-ICFP09.pdf" "../" "hanoi-mmf2001a.pdf" "./" "reisenberg/" "hanoi-handout-2.pdf" "hanoi-4-pigs-iteerative.pdf" ".gitignore" "wholemeal-example-sudoku.lhs" "byorgey/" "README.org" ".git/" "problem-on-streams.txt")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/Cis194/week02/" (22531 33590 855287 302000) "../" "Log.hs" "sample.log" "./" "Hw.hs" "error.log")
-
- ("/home/arthur/CIS194/byorgey/haskell/2016/src/main/" (22528 60492 451916 273000) "Main.hs" "../" "Doctest.hs" "./")
-
- ("/home/arthur/.emacs.d/snippets/" (22529 51033 183461 935000) "scala-mode/" "../" "ruby-mode/" "./" "haskell-mode/" "org-mode/" "web-mode/" "yaml-mode/" "html-mode/")
-
- ("/home/arthur/src/racket/" (22528 31995 894326 423000) "test.rkt" "../" "./")
-
- ("/home/arthur/src/" (22528 30452 281256 994000) "haskell/" "../" "racket/" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

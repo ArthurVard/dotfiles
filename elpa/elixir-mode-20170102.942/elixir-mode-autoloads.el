@@ -1,10 +1,10 @@
 ;;; elixir-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "elixir-mode" "elixir-mode.el" (22693 22825
-;;;;;;  476434 933000))
+;;;### (autoloads nil "elixir-mode" "elixir-mode.el" (22747 24448
+;;;;;;  667497 455000))
 ;;; Generated autoloads from elixir-mode.el
 
 (autoload 'elixir-mode-open-github "elixir-mode" "\
@@ -58,7 +58,7 @@ Major mode for editing Elixir code.
 ;;;***
 
 ;;;### (autoloads nil nil ("elixir-mode-pkg.el" "elixir-smie.el")
-;;;;;;  (22693 22825 480435 44000))
+;;;;;;  (22747 24448 690007 174000))
 
 ;;;***
 
