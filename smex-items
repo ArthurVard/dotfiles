@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  magit-status
+ project-find-regexp
+ web-mode
+ indent-to
+ ruby-mode
  shrink-window
  haskell-sort-imports
- haskell-align-imports
- grep-find
- goto-line
- load-theme
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,7 @@
  (haskell-move-nested-right . 1)
  (magit-mode . 1)
  (org-mode . 1)
- (magit-status . 93)
+ (magit-status . 115)
  (yas-reload-all . 1)
  (fci-mode . 9)
  (term . 1)
@@ -32,12 +32,12 @@
  (magit-init . 1)
  (shell . 6)
  (goto-line . 19)
- (indent-to . 2)
+ (indent-to . 3)
  (indent-rigidly-left-to-tab-stop . 8)
  (indent-to-column . 1)
  (indent-region . 1)
  (customize-themes . 3)
- (project-find-regexp . 5)
+ (project-find-regexp . 11)
  (projectile-find-file . 1)
  (projectile-mode . 1)
  (package-list-packages . 1)
@@ -49,4 +49,6 @@
  (haskell-mode-stylish-buffer . 1)
  (haskell-sort-imports . 81)
  (grep-find . 1)
+ (web-mode . 2)
+ (ruby-mode . 1)
 )

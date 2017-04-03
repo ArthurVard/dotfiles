@@ -1,5 +1,5 @@
 ;;;; Created       : ...
-;;;; Last Modified : 2017 Feb 16 (Thu) 09:12:26 AM by Arthur Vardanyan.
+;;;; Last Modified : 2017 Apr 03 (Mon) 06:26:08 PM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (require 'package)
@@ -36,6 +36,7 @@
 ;; add package names to the list, on start will install missing pacakges in new machine
 (ensure-package-installed
  'web-mode
+ 'emmet-mode
  'projectile
  'ido
  'ido-yes-or-no
@@ -58,8 +59,21 @@
  'elm-mode
  'elm-yasnippets
  'elixir-mode
- 'elixir-yasnippets)
+ 'elixir-yasnippets
+ )
 
+
+;;; web-mode + emmet
+(dolist (hook (list
+               'sgml-mode-hook
+               'css-mode-hook
+               'web-mode-hook
+               'jade-mode-hook
+               ))
+  (add-hook hook (lambda ()
+                   (setq emmet-preview-default nil) ;don't show preview when expand code
+                   (emmet-mode)
+                   )))
 
 ;; Unbind Suspend/Pesky Sleep Button
 (global-unset-key [(control z)])
@@ -89,6 +103,7 @@
 (require 'uniquify)
 (require 'ruby-mode)
 (require 'web-mode)
+(require 'emmet-mode)
 (require 'projectile)
 (require 'projectile-rails)
 (require 'smartparens-config)
@@ -192,7 +207,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
+    (emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
@@ -207,4 +222,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-)
+ )
