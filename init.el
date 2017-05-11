@@ -1,5 +1,5 @@
 ;;;; Created       : ...
-;;;; Last Modified : 2017 Apr 03 (Mon) 06:26:08 PM by Arthur Vardanyan.
+;;;; Last Modified : 2017 May 11 (Thu) 04:33:25 PM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (require 'package)
@@ -36,6 +36,7 @@
 ;; add package names to the list, on start will install missing pacakges in new machine
 (ensure-package-installed
  'web-mode
+ 'coffee-mode
  'emmet-mode
  'projectile
  'ido
@@ -207,7 +208,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
+    (coffee-mode emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
