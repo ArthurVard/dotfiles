@@ -1,16 +1,29 @@
 ;;;; Created       : ...
-;;;; Last Modified : 2017 May 11 (Thu) 04:33:25 PM by Arthur Vardanyan.
+;;;; Last Modified : 2017 Jun 14 (Wed) 11:40:55 AM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (require 'package)
 
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+(package-initialize)
 
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/"))
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)
+(require 'bind-key)
+;(add-to-list 'package-archives
+;	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;(add-to-list 'package-archives
+;             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 
 (package-initialize)
@@ -32,6 +45,29 @@
      packages)
 )
 
+;(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup)
+(use-package flycheck
+  :demand
+  :diminish ""
+  :bind (:map flycheck-mode-map
+              ("M-n" . flycheck-next-error)
+              ("M-p" . flycheck-previous-error))
+  :init
+  (progn
+    (add-hook 'after-init-hook #'global-flycheck-mode))
+  :config
+  (progn
+    (defun init-flycheck-may-enable-mode (f)
+      "Disallow flycheck in special buffers."
+      (interactive)
+      (and (not (string-prefix-p "*" (buffer-name)))
+           (apply (list f))))
+
+    (advice-add 'flycheck-may-enable-mode :around
+                #'init-flycheck-may-enable-mode)))
+
+;(eval-after-load 'flycheck  '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))
+
 ;;; === List my packages ===
 ;; add package names to the list, on start will install missing pacakges in new machine
 (ensure-package-installed
@@ -45,6 +81,8 @@
  'ido-vertical-mode
  'smartparens
  'fill-column-indicator
+ 'flycheck
+ 'flycheck-haskell
  'haskell-mode
  'projectile-rails
 ; 'haskell-indentation
@@ -208,7 +246,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (coffee-mode emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
+    (use-package flycheck-haskell coffee-mode emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
