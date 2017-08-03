@@ -3,23 +3,23 @@
 (
  magit-status
  project-find-regexp
- web-mode
- indent-to
+ imenu
+ goto-line
  ruby-mode
- shrink-window
- haskell-sort-imports
+ mkdir
+ make-directory
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 12)
+ (eval-buffer . 14)
  (shrink-window . 100)
  (ido-push-dir . 1)
  (haskell-move-nested-left . 1)
  (haskell-move-nested-right . 1)
  (magit-mode . 1)
  (org-mode . 1)
- (magit-status . 115)
+ (magit-status . 281)
  (yas-reload-all . 1)
  (fci-mode . 9)
  (term . 1)
@@ -27,28 +27,30 @@
  (magit-push . 14)
  (load-theme . 24)
  (package-install-file . 4)
- (insert-create-and-modifystamp . 21)
- (make-directory . 1)
- (magit-init . 1)
+ (insert-create-and-modifystamp . 32)
+ (make-directory . 3)
+ (magit-init . 2)
  (shell . 6)
- (goto-line . 19)
+ (goto-line . 20)
  (indent-to . 3)
  (indent-rigidly-left-to-tab-stop . 8)
  (indent-to-column . 1)
  (indent-region . 1)
  (customize-themes . 3)
- (project-find-regexp . 11)
+ (project-find-regexp . 67)
  (projectile-find-file . 1)
  (projectile-mode . 1)
  (package-list-packages . 1)
  (magit-branch . 3)
  (magit-checkout . 1)
  (column-number-mode . 3)
- (haskell-align-imports . 57)
+ (haskell-align-imports . 82)
  (haskell-add-import . 1)
  (haskell-mode-stylish-buffer . 1)
- (haskell-sort-imports . 81)
+ (haskell-sort-imports . 91)
  (grep-find . 1)
  (web-mode . 2)
- (ruby-mode . 1)
+ (ruby-mode . 3)
+ (mkdir . 3)
+ (imenu . 1)
 )
