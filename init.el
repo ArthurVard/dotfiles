@@ -1,5 +1,5 @@
 ;;;; Created       : ...
-;;;; Last Modified : 2017 Jun 14 (Wed) 11:40:55 AM by Arthur Vardanyan.
+;;;; Last Modified : 2018 Feb 13 (Tue) 08:23:10 PM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (require 'package)
@@ -9,14 +9,14 @@
 ;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 (package-initialize)
-
+(package-refresh-contents)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
 (eval-when-compile
   (require 'use-package))
-(require 'diminish)
+;(require 'diminish)
 (require 'bind-key)
 ;(add-to-list 'package-archives
 ;	     '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -68,16 +68,19 @@
 
 ;(eval-after-load 'flycheck  '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))
 
+;; Haskell
+(add-hook 'haskell-mode-hook 'intero-mode)
 ;;; === List my packages ===
 ;; add package names to the list, on start will install missing pacakges in new machine
 (ensure-package-installed
+ 'intero
  'web-mode
  'coffee-mode
  'emmet-mode
  'projectile
  'ido
  'ido-yes-or-no
- 'ido-ubiquitous
+; 'ido-ubiquitous - redudant
  'ido-vertical-mode
  'smartparens
  'fill-column-indicator
@@ -132,7 +135,7 @@
 ;;; Themes
 ;;(custom-enabled-themes (quote (tsdh-dark)))
 ;(load-theme 'solarized-light t)
-(load-theme 'tsdh-dark t)
+;(load-theme 'tsdh-dark t)
 ;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;(load-theme 'solarized t)
 
@@ -149,7 +152,7 @@
 (require 'smartparens-ruby)
 
 (require 'ido) ; buffer switching ido mode
-(require 'ido-ubiquitous)
+;(require 'ido-ubiquitous)
 (require 'ido-vertical-mode)
 (require 'ido-yes-or-no)
 
@@ -240,13 +243,14 @@
  '(comint-move-point-for-output t)
  '(comint-scroll-show-maximum-output t)
  '(comint-scroll-to-bottom-on-input t)
+ '(custom-enabled-themes (quote (tsdh-dark)))
  '(custom-safe-themes
    (quote
     ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (use-package flycheck-haskell coffee-mode emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
+    (intero use-package flycheck-haskell coffee-mode emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
@@ -261,4 +265,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "gray20" :foreground "white smoke" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 1 :width normal :foundry "default" :family "default")))))
