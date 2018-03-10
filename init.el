@@ -1,5 +1,5 @@
 ;;;; Created       : ...
-;;;; Last Modified : 2018 Feb 13 (Tue) 08:23:10 PM by Arthur Vardanyan.
+;;;; Last Modified : 2018 Mar 10 (Sat) 06:36:17 PM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (require 'package)
@@ -265,4 +265,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "gray20" :foreground "white smoke" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 1 :width normal :foundry "default" :family "default")))))
+ '(default ((t (:inherit nil :stipple nil :background "gray20" :foreground "white smoke" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 1 :width normal :foundry "default" :family "default"))))
+ '(esk-paren-face ((t (:foreground "brightwhite")))))
