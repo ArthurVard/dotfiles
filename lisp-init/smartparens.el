@@ -1,4 +1,5 @@
-;https://gist.github.com/mordocai/ee13c414712a00c02855
+;https://ebzzry.io/en/emacs-pairs/
+; https://github.com/Denommus/emacs-config/blob/master/smartparens.el201~
 
 ;;; Smartparens
 (smartparens-global-mode)
