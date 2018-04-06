@@ -1,5 +1,8 @@
-;;;; Created       : ...
-;;;; Last Modified : 2018 Mar 10 (Sat) 06:36:17 PM by Arthur Vardanyan.
+;;; init.el -- config
+;;; Commentary:
+;;; Code:
+
+;;; Last Modified : 2018 Apr 03 (Tue) 04:24:17 PM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (require 'package)
@@ -102,6 +105,7 @@
  'elm-yasnippets
  'elixir-mode
  'elixir-yasnippets
+ 'alchemist ; elixir toolchain https://github.com/tonini/alchemist.el
  )
 
 
@@ -165,6 +169,7 @@
 (require 'racket-mode)
 (require 'elm-mode)
 (require 'elixir-mode)
+(require 'alchemist)
 ;(require 'elm-yasnippets)
 ;(require 'elixir-yasnippets)
 
@@ -232,6 +237,9 @@
 (ido-vertical-mode 1) ; display IDO vertically
 
 
+;;company-mode in all buffers
+(add-hook 'after-init-hook 'global-company-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -250,7 +258,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (intero use-package flycheck-haskell coffee-mode emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
+    (alchemist ediprolog intero use-package flycheck-haskell coffee-mode emmet-mode solarized-theme yasnippet uniquify git-modes racket-mode racket-moe git-gutter magit smex semx web-mode smartparens projectile-rails ido-yes-or-no ido-vertical-mode ido-ubiquitous hindent haskell-mode fill-column-indicator)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
