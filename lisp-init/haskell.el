@@ -6,7 +6,20 @@
 ;
 (custom-set-variables '(haskell-stylish-on-save t))
 
+;; https://github.com/haskell/haskell-mode/issues/1553
 
+(setq haskell-process-args-ghci
+          '("-ferror-spans" "-fshow-loaded-modules"))
+
+(setq haskell-process-args-cabal-repl
+          '("--ghc-options=-ferror-spans -fshow-loaded-modules"))
+
+(setq haskell-process-args-stack-ghci
+          '("--ghci-options=-ferror-spans -fshow-loaded-modules"
+            "--no-build" "--no-load"))
+
+(setq haskell-process-args-cabal-new-repl
+          '("--ghc-options=-ferror-spans -fshow-loaded-modules"))
 
 (eval-after-load 'haskell-mode '(progn
   (define-key haskell-mode-map [f7] 'haskell-navigate-imports)

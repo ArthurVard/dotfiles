@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-;;; Last Modified : 2018 Apr 03 (Tue) 04:24:17 PM by Arthur Vardanyan.
+;;; Last Modified : 2018 Jun 22 (Fri) 11:39:33 PM by Arthur Vardanyan.
 
 ;;; Initialize package system
 (require 'package)
@@ -49,34 +49,34 @@
 )
 
 ;(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup)
-(use-package flycheck
-  :demand
-  :diminish ""
-  :bind (:map flycheck-mode-map
-              ("M-n" . flycheck-next-error)
-              ("M-p" . flycheck-previous-error))
-  :init
-  (progn
-    (add-hook 'after-init-hook #'global-flycheck-mode))
-  :config
-  (progn
-    (defun init-flycheck-may-enable-mode (f)
-      "Disallow flycheck in special buffers."
-      (interactive)
-      (and (not (string-prefix-p "*" (buffer-name)))
-           (apply (list f))))
-
-    (advice-add 'flycheck-may-enable-mode :around
-                #'init-flycheck-may-enable-mode)))
+;(use-package flycheck
+;  :demand
+;  :diminish ""
+;  :bind (:map flycheck-mode-map
+;              ("M-n" . flycheck-next-error)
+;              ("M-p" . flycheck-previous-error))
+;  :init
+;  (progn
+;    (add-hook 'after-init-hook #'global-flycheck-mode))
+;  :config
+;  (progn
+;    (defun init-flycheck-may-enable-mode (f)
+;      "Disallow flycheck in special buffers."
+;      (interactive)
+;      (and (not (string-prefix-p "*" (buffer-name)))
+;           (apply (list f))))
+;
+;    (advice-add 'flycheck-may-enable-mode :around
+;                #'init-flycheck-may-enable-mode)))
 
 ;(eval-after-load 'flycheck  '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))
 
 ;; Haskell
-(add-hook 'haskell-mode-hook 'intero-mode)
+;;(add-hook 'haskell-mode-hook 'intero-mode)
 ;;; === List my packages ===
 ;; add package names to the list, on start will install missing pacakges in new machine
 (ensure-package-installed
- 'intero
+; 'intero
  'web-mode
  'coffee-mode
  'emmet-mode
@@ -87,8 +87,8 @@
  'ido-vertical-mode
  'smartparens
  'fill-column-indicator
- 'flycheck
- 'flycheck-haskell
+; 'flycheck
+; 'flycheck-haskell
  'haskell-mode
  'projectile-rails
 ; 'haskell-indentation
