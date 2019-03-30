@@ -15,4 +15,5 @@ elm-stuff
 elm-package.json
 repl-temp*.elm
 .directory
+.cache
 transient
