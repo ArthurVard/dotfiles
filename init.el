@@ -67,6 +67,9 @@
 (require 'av-git)
 (require 'av-racket)
 (require 'av-dir-tree)
+(require 'av-nix)
+
+
 
 (require 'av-global)
 
@@ -94,7 +97,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
+    (nix-mode all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
