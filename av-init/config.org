@@ -130,34 +130,50 @@ Define a few common tasks as capture templates. Specifically, I frequently:
 - Maintain a todo list in =~/documents/org/index.org=.
 - Convert emails into todos to maintain an empty inbox.
 
+
 #+BEGIN_SRC emacs-lisp
   (setq org-capture-templates
-        '(("b" "Blog idea"
+        '( 
+          ("p" "Private Tempaltes")
+          ("pb" "Blog idea"
            entry
            (file "~/documents/notes/blog-ideas.org")
-           "* %?\n")
-
-          ("e" "Email" entry
+           "* %?\n"
+           )
+          ("pe" "Email" entry
            (file+headline org-index-file "Inbox")
            "* TODO %?\n\n%a\n\n")
 
-          ("f" "Finished book"
+          ("pf" "Finished book"
            table-line (file "~/documents/notes/books-read.org")
            "| %^{Title} | %^{Author} | %u |")
 
-          ("r" "Reading"
+          ("pr" "Reading"
            checkitem
            (file "~/documents/notes/to-read.org"))
 
-          ("s" "Subscribe to an RSS feed"
+          ("ps" "Subscribe to an RSS feed"
            plain
            (file "~/documents/rss/urls")
            "%^{Feed URL} \"~%^{Feed name}\"")
 
+          ("pt" "Todo"
+           entry
+           (file+headline org-index-file "Inbox")
+           "* TODO %?\n")
+
+
           ("t" "Todo"
            entry
            (file+headline org-index-file "Inbox")
-           "* TODO %?\n")))
+           "* TODO %?\n")
+          ("g" "Code trick from chat"
+           entry
+           (file "~/documents/code/gists.org")
+           "* %^{Gist Title} \n#+BEGIN_SRC haskell \n%?  \n#+END_SRC \n :CODEGIST: \n  - Added: %U \n :END:")
+
+          )
+        )
 #+END_SRC
 
 When I'm starting an Org capture template I'd like to begin in insert mode. I'm

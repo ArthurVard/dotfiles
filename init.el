@@ -106,3 +106,6 @@
 ;;;; customize bits goes in another file
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
+
+;; aline linum by spacing
+(setq linum-format "%d ")
