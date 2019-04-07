@@ -74,6 +74,8 @@
 (require 'av-dir-tree)
 (require 'av-nix)
 
+(require 'av-engine) ;; search the web
+
 
 
 (require 'av-global)
@@ -81,6 +83,9 @@
 ;; Highlight the current line
 (global-hl-line-mode)
 
+(ensure-package-installed
+ 'diff-hl
+)
 (use-package diff-hl
   :config
   (add-hook 'prog-mode-hook 'turn-on-diff-hl-mode)
@@ -122,7 +127,7 @@
     ("~/orgs/another-page.org" "~/documents/org/index.org")))
  '(package-selected-packages
    (quote
-    (graphviz-dot-mode gnuplot org-bullets diff-hl nix-mode all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
+    (engine-mode org-bullets-mode graphviz-dot-mode gnuplot org-bullets diff-hl nix-mode all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)

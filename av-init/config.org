@@ -12,9 +12,13 @@
 I like to see an outline of pretty bullets instead of a list of asterisks.
 
 #+BEGIN_SRC emacs-lisp
-  (use-package org-bullets
-    :init
-    (add-hook 'org-mode-hook 'org-bullets-mode))
+;(ensure-package-installed
+; 'org-bullets
+;)
+
+;(use-package org-bullets
+;    :init
+;    (add-hook 'org-mode-hook 'org-bullets-mode))
 #+END_SRC
 
 I like seeing a little downward-pointing arrow instead of the usual ellipsis
@@ -143,7 +147,7 @@ Define a few common tasks as capture templates. Specifically, I frequently:
 
           ("r" "Reading"
            checkitem
-           (file (org-file-path "to-read.org")))
+           (file "~/documents/notes/to-read.org"))
 
           ("s" "Subscribe to an RSS feed"
            plain
@@ -160,7 +164,7 @@ When I'm starting an Org capture template I'd like to begin in insert mode. I'm
 opening it up in order to start typing something, so this skips a step.
 
 #+BEGIN_SRC emacs-lisp
-  (add-hook 'org-capture-mode-hook 'evil-insert-state)
+;  (add-hook 'org-capture-mode-hook 'evil-insert-state)
 #+END_SRC
 
 Refiling according to the document's hierarchy.
@@ -220,7 +224,12 @@ Allow export to markdown and beamer (for presentations).
 Allow =babel= to evaluate Emacs lisp, Ruby, dot, or Gnuplot code.
 
 #+BEGIN_SRC emacs-lisp
-    (use-package gnuplot)
+(ensure-package-installed
+ 'gnuplot
+ 'graphviz-dot-mode 
+)
+
+(use-package gnuplot)
 
     (org-babel-do-load-languages
      'org-babel-load-languages
@@ -239,6 +248,7 @@ Don't ask before evaluating code blocks.
 Associate the "dot" language with the =graphviz-dot= major mode.
 
 #+BEGIN_SRC emacs-lisp
+
   (use-package graphviz-dot-mode)
   (add-to-list 'org-src-lang-modes '("dot" . graphviz-dot))
 #+END_SRC
