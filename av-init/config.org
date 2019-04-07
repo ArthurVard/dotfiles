@@ -61,16 +61,16 @@ the location of an index file (my main todo list), and archive finished tasks in
 =~/documents/org/archive.org=.
 
 #+BEGIN_SRC emacs-lisp
-      (setq org-directory "~/documents/org")
+      (setq org-directory "~/orgs")
 
-      (defun org-file-path (filename)
+      (defun concat-to-org-dir (filename)
         "Return the absolute address of an org file, given its relative name."
         (concat (file-name-as-directory org-directory) filename))
 
-      (setq org-inbox-file "~/documents/org/inbox.org")
-      (setq org-index-file (org-file-path "index.org"))
+      (setq org-inbox-file (concat-to-org-dir "inbox.org"))
+      (setq org-index-file (concat-to-org-dir "index.org"))
       ;(setq org-archive-location
-       ;     (concat (org-file-path "archive.org") "::* From %s"))
+       ;     (concat (concat-to-org-dir "archive.org") "::* From %s"))
 
     ;; YYYY-MM-filename.org
      (setq org-archive-location
@@ -132,44 +132,54 @@ Define a few common tasks as capture templates. Specifically, I frequently:
 
 
 #+BEGIN_SRC emacs-lisp
+
+  (ensure-package-installed
+ 'deft
+)
+
+(require 'deft)
+
+(setq deft-extensions '("txt" "tex" "org"))
+(setq deft-directory org-directory)
+
   (setq org-capture-templates
         '( 
           ("p" "Private Tempaltes")
           ("pb" "Blog idea"
            entry
-           (file "~/documents/notes/blog-ideas.org")
+           (file "~/orgs/notes/blog-ideas.org")
            "* %?\n"
            )
           ("pe" "Email" entry
-           (file+headline org-index-file "Inbox")
+           (file+headline org-index-file "Index")
            "* TODO %?\n\n%a\n\n")
 
           ("pf" "Finished book"
-           table-line (file "~/documents/notes/books-read.org")
+           table-line (file "~/orgs/notes/books-read.org")
            "| %^{Title} | %^{Author} | %u |")
 
           ("pr" "Reading"
            checkitem
-           (file "~/documents/notes/to-read.org"))
+           (file "~/orgs/notes/to-read.org"))
 
           ("ps" "Subscribe to an RSS feed"
            plain
-           (file "~/documents/rss/urls")
+           (file "~/orgs/rss/urls")
            "%^{Feed URL} \"~%^{Feed name}\"")
 
           ("pt" "Todo"
            entry
-           (file+headline org-index-file "Inbox")
+           (file+headline org-index-file "Index")
            "* TODO %?\n")
 
 
           ("t" "Todo"
            entry
-           (file+headline org-index-file "Inbox")
+           (file+headline org-index-file "Index")
            "* TODO %?\n")
           ("g" "Code trick from chat"
            entry
-           (file "~/documents/code/gists.org")
+           (file "~/orgs/code/gists.org")
            "* %^{Gist Title} \n#+BEGIN_SRC haskell \n%?  \n#+END_SRC \n :CODEGIST: \n  - Added: %U \n :END:")
 
           )
