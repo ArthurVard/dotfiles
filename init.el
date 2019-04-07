@@ -10,13 +10,18 @@
 ;; Initialize and install Packages
 ;; =============================================================================
 
+
+;; Configure package.el to include MELPA.
 (require 'package)
 
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+
 (package-initialize)
 (package-refresh-contents)
+
+
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
@@ -73,7 +78,24 @@
 
 (require 'av-global)
 
+;; Highlight the current line
+(global-hl-line-mode)
 
+(use-package diff-hl
+  :config
+  (add-hook 'prog-mode-hook 'turn-on-diff-hl-mode)
+  (add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode))
+
+
+
+(org-babel-load-file "~/.emacs.d/av-init/config.org")
+
+(setq org-file-apps
+    (quote
+        ((auto-mode . emacs)
+        ("\\.mm\\'" . default)
+        ("\\.x?html?\\'" . "/run/current-system/sw/bin/firefox %s")
+        ("\\.pdf\\'" . default))))
 
 ;; =============================================================================
 ;; Custom set variables section
@@ -95,9 +117,12 @@
    (quote
     ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(haskell-stylish-on-save t)
+ '(org-agenda-files
+   (quote
+    ("~/orgs/another-page.org" "~/documents/org/index.org")))
  '(package-selected-packages
    (quote
-    (nix-mode all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
+    (graphviz-dot-mode gnuplot org-bullets diff-hl nix-mode all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
