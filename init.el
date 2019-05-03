@@ -76,8 +76,6 @@
 
 (require 'av-engine) ;; search the web
 
-
-
 (require 'av-global)
 
 ;; Highlight the current line
@@ -92,7 +90,7 @@
   (add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode))
 
 
-
+;; org-mode config done using org-mode
 (org-babel-load-file "~/.emacs.d/av-init/config.org")
 
 (setq org-file-apps

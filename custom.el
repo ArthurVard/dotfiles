@@ -18,12 +18,9 @@
    (quote
     ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(haskell-stylish-on-save t)
- '(org-agenda-files
-   (quote
-    ("~/orgs/another-page.org" "~/documents/org/index.org")))
  '(package-selected-packages
    (quote
-    (deft  engine-mode org-bullets-mode graphviz-dot-mode gnuplot org-bullets diff-hl nix-mode all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
+    (deft engine-mode org-bullets-mode graphviz-dot-mode gnuplot org-bullets diff-hl nix-mode all-the-icons-dired dired-sidebar smex smartparens ido-vertical-mode ido-yes-or-no use-package)))
  '(safe-local-variable-values
    (quote
     ((haskell-indent-spaces . 4)
