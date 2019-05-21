@@ -56,6 +56,16 @@ Quickly insert a block of elisp:
                '("el" "#+BEGIN_SRC emacs-lisp\n?\n#+END_SRC"))
 #+END_SRC
 
+** Helper functions 
+#+BEGIN_SRC emacs-lisp
+   (defun concat-to-org-dir (filename)
+     "Return the absolute address of an org file, given its relative name."
+     (concat (file-name-as-directory org-directory) filename))
+
+   (defun concat-to-orgzly-dir (filename)
+     "Return the absolute address of an org file, given its relative name."
+     (concat (file-name-as-directory orgzly-directory) filename))
+#+END_SRC
 
 ** Global Variables and Settigns
 #+BEGIN_SRC emacs-lisp
@@ -66,23 +76,18 @@ Quickly insert a block of elisp:
    ;; 
   '(org-id-locations-file "~/orgs/.org-id-locations")
 
-#+END_SRC
+   ;; main files
+   (setq org-inbox-file   (concat-to-org-dir    "inbox.org"))
+
+   (setq org-index-file   (concat-to-orgzly-dir "index.org"   ))
+   (setq org-mylearn-file (concat-to-orgzly-dir "mylearn.org" ))
+   (setq org-mywork-file  (concat-to-orgzly-dir "mywork.org"  ))
 
 
-** Task and org-capture management
+  ;; Agenda files
+   (setq org-agenda-files (list org-index-file org-mylearn-file org-mywork-file))
 
-#+BEGIN_SRC emacs-lisp
-      (defun concat-to-org-dir (filename)
-        "Return the absolute address of an org file, given its relative name."
-        (concat (file-name-as-directory org-directory) filename))
-
-      (defun concat-to-orgzly-dir (filename)
-        "Return the absolute address of an org file, given its relative name."
-        (concat (file-name-as-directory orgzly-directory) filename))
-
-
-      (setq org-inbox-file (concat-to-org-dir "inbox.org"))
-      (setq org-index-file (concat-to-orgzly-dir "index.org"))
+  ;; Archives
       ;(setq org-archive-location
        ;     (concat (concat-to-org-dir "archive.org") "::* From %s"))
 
@@ -94,7 +99,25 @@ Quickly insert a block of elisp:
 
   ;;    (setq org-archive-location
     ;;        (concat org-directory  "/archive/%s::datetree/"))
+
+
 #+END_SRC
+
+Refiling
+#+BEGIN_SRC emacs-lisp
+  (setq org-refile-use-outline-path 'file)
+  (setq org-outline-path-complete-in-steps nil)
+
+  ;; a new parent that you create on-the-fly
+  (setq org-refile-allow-creating-parent-nodes 'confirm)
+
+  (setq org-refile-targets
+      '((nil :maxlevel . 3)
+        (org-agenda-files :maxlevel . 3)))
+
+#+END_SRC
+
+** Task and org-capture management
 
 I use [[http://agiletortoise.com/drafts/][Drafts]] to create new tasks, format them according to a template, and
 append them to an "inbox.org" file in my Dropbox. This function lets me import
@@ -110,12 +133,6 @@ them easily from that inbox file to my index.
         (delete-file org-inbox-file))))
 #+END_SRC
 
-I store all my todos in =~/orgs/orgzly/index.org=, so I'd like to derive my
-agenda from there.
-
-#+BEGIN_SRC emacs-lisp
-  (setq org-agenda-files (list org-index-file))
-#+END_SRC
 
 Hitting =C-c C-x C-s= will mark a todo as done and move it to an appropriate
 place in the archive.
@@ -207,12 +224,6 @@ opening it up in order to start typing something, so this skips a step.
 ;  (add-hook 'org-capture-mode-hook 'evil-insert-state)
 #+END_SRC
 
-Refiling according to the document's hierarchy.
-
-#+BEGIN_SRC emacs-lisp
-  (setq org-refile-use-outline-path t)
-  (setq org-outline-path-complete-in-steps nil)
-#+END_SRC
 
 **** Keybindings
 
@@ -221,7 +232,7 @@ Bind a few handy keys.
 #+BEGIN_SRC emacs-lisp
   (define-key global-map "\C-cl" 'org-store-link)
   (define-key global-map "\C-ca" 'org-agenda)
-  (define-key global-map "\C-cc" 'org-capture)
+  (define-key global-map (kbd "<f6>") 'org-capture)
 #+END_SRC
 
 Hit =C-c i= to quickly open up my todo list.
