@@ -5,7 +5,8 @@ ido.last
 */~*
 */*~
 \#*\#
-
+lisp-init/
+custom.el
 /eshell
 /elpa* 
 /el-get
