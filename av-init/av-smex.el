@@ -1,6 +1,4 @@
-(ensure-package-installed 'smex)
-
-(require 'smex)
+(use-package smex)
 
 (smex-initialize)
 

@@ -1,97 +1,92 @@
-;;; init.el -- config
+;;; init.el --- Initialization file for Emacs.
 ;;; Commentary:
+;; bebyx initialization file for Emacs  
+
+;;;; https://bebyx.co.ua/en/log/emacs-haskell-lsp.html
+;;;; https://github.com/bebyx/dotfiles/blob/master/.emacs.d/init.el
+
 ;;; Code:
 
-;;; Last Modified : 2019 Mar 30 (Sat) 06:01:45 PM by Arthur Vardanyan.
-
-;;; Initialize package system
-
-;; =============================================================================
-;; Initialize and install Packages
-;; =============================================================================
+;(defvar emacs-config-dir "~/.emacs.d/")
+(defvar emacs-config-dir "~/dotfiles")
 
 
-;; Configure package.el to include MELPA.
+(setq custom-file (concat emacs-config-dir "/custom.el"))
+(load custom-file 'noerror)
+
+(add-to-list 'load-path (concat emacs-config-dir "/lisp/"))1
+(add-to-list 'load-path (concat emacs-config-dir "/av-init/"))
+(add-to-list 'load-path (concat emacs-config-dir "/av-init/themes"))
+
+;; Glue GHCup path to Haskell LSP
+(setenv "PATH" (concat (getenv "PATH") ":" (expand-file-name "~/.ghcup/bin")))
+(setq exec-path (append exec-path '(expand-file-name "~/.ghcup/bin")))
+
+;; Initialize package sources
 (require 'package)
 
-(setq package-enable-at-startup nil)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
 
-(package-initialize)
-(package-refresh-contents)
+(package-initialize) ; activate all the packages
 
+;; Fetch the list of packages available
+(unless package-archive-contents
+  (package-refresh-contents))
 
+;; Initialize use-package on non-Linux platforms
 (unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
+   (package-install 'use-package))
 
-(eval-when-compile  (require 'use-package))
-(require 'bind-key)
+(require 'use-package)
+(setq use-package-always-ensure t)
 
-(package-initialize)
+(use-package auto-package-update
+  :custom
+  (auto-package-update-interval 7)
+  (auto-package-update-prompt-before-update t)
+  (auto-package-update-hide-results t)
+  :config
+  (auto-package-update-maybe)
+  (auto-package-update-at-time "21:00"))
 
-(when (not package-archive-contents)
-    (package-refresh-contents))
+;; skip for windows
+;;(use-package exec-path-from-shell)
+;;(exec-path-from-shell-initialize)
 
-(defun user-full-name () "Arthur Vardanyan")
-
-
-(defvar av-emacs-config-path "~/.emacs.d")
-
-(push (expand-file-name "~/.emacs.d/av-init") load-path)
-
-
-(defun av-load (filename) "FILENAME."
-;  (interactive)
-  (load-file filename))
-
-
-;; =============================================================================
-;; Packages and Configs
-;; =============================================================================
-;;; === CUSTOM CHECK FUNCTION ===
-(defun ensure-package-installed (&rest packages)
-  "Assure every package is installed, ask for installation if it’s not.
-   Return a list of installed packages or nil for every skipped package."
-  (mapcar
-   (lambda (package)
-     (unless (package-installed-p package)
-       (package-install package)))
-     packages)
-  )
-
-
-(require 'av-yasnippet)
-(require 'av-ido)
-(require 'av-web)
-(require 'av-fci)
-(require 'av-smartparens)
-(require 'av-smex)
-(require 'av-haskell)
-(require 'av-git)
-(require 'av-racket)
-(require 'av-dir-tree)
-(require 'av-nix)
-
-(require 'av-engine) ;; search the web
+(use-package better-shell
+    :ensure t
+    :bind (("C-\"" . better-shell-shell)
+           ("C-:" . better-shell-remote-open)))
 
 (require 'av-global)
+(require 'av-modes)
 
-;; Highlight the current line
-(global-hl-line-mode)
+;;(require 'av-complition)
+;;(require 'av-ido)
+;;(require 'av-selectrum)
+;;(require 'av-ivy)
+;;(require 'av-smex)
+;;(require 'av-helm)
+;;(require 'av-corfu)
+;;(require 'av-reverse-im)
+;;(require 'av-misc)
 
-(ensure-package-installed
- 'diff-hl
-)
-(use-package diff-hl
-  :config
-  (add-hook 'prog-mode-hook 'turn-on-diff-hl-mode)
-  (add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode))
+(require 'av-fci)
+(require 'av-git)
+(require 'av-vertico)
 
-
+(require 'av-lsp)
+(require 'av-quail)
+;(require 'av-keycast)
+(require 'av-lsp)
+(require 'av-company)
+(require 'av-projectile)
+(require 'av-pdfreading)
+(require 'av-dashboard)
 ;; org-mode config done using org-mode
-(org-babel-load-file "~/.emacs.d/av-init/config.org")
+(org-babel-load-file  (concat emacs-config-dir "/av-init/av-org-config.org"))
 
 (setq org-file-apps
     (quote
@@ -100,10 +95,19 @@
         ("\\.x?html?\\'" . "/run/current-system/sw/bin/firefox %s")
         ("\\.pdf\\'" . default))))
 
+;; themes: 'leuven | 'zenburn | monokai | blackboard
+(require 'monokai)
 
-;;;; customize bits goes in another file
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file 'noerror)
+;; (use-package doom-modeline
+;;   :hook (after-init . doom-modeline-mode)
+;;   :config
+;;   (setq doom-modeline-checker-simple-format t)
+;;   (setq doom-modeline-icon t))
 
-;; aline linum by spacing
-(setq linum-format "%d ")
+(use-package which-key
+  :init
+  (which-key-mode)
+  (setq which-key-idle-delay 1))
+
+(provide 'init)
+;;; init.el ends here

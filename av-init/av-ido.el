@@ -1,14 +1,8 @@
 ; buffer switching ido mode
-(ensure-package-installed
- 'ido
- 'ido-yes-or-no
-; 'ido-ubiquitous - redudant
- 'ido-vertical-mode
-)
 
-(require 'ido)
-(require 'ido-vertical-mode)
-(require 'ido-yes-or-no)
+(use-package ido)
+(use-package ido-vertical-mode)
+(use-package ido-yes-or-no)
 
 ;; == ido ==
 ;; make buffer switch command auto suggestions, also for find-file command
